@@ -1,0 +1,127 @@
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Ajusta el ancho mínimo y distribuye en columnas iguales */
+  gap: 20px;
+  /* Espacio entre los elementos */
+  list-style: none;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.producto img {
+  width: 50%;
+  height: auto;
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.producto p {
+  margin: 10px 0;
+}
+
+
+/* Estilo para productos con stock */
+.con-stock {
+  background-color: #4CAF50;
+  /* Verde */
+}
+
+/* Estilo para productos agotados */
+.agotado {
+  background-color: #FF5733;
+  /* Rojo */
+}
+
+
+.spinner-load-restart {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #007BFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+/* Estilos básicos del botón */
+.interactive-button {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Efecto de sombra al pasar el mouse */
+.interactive-button:hover {
+  box-shadow: 0 6px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Efecto de clic (se hunde ligeramente) */
+.interactive-button:active {
+  transform: translateY(2px);
+}
+
+/* Efecto de enfoque (borde alrededor del botón) */
+.interactive-button:focus {
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1), 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+    /* Ajusta el ancho mínimo y distribuye en columnas iguales */
+    gap: 20px;
+    /* Espacio entre los elementos */
+    list-style: none;
+  }
+
+  .header-buttons {
+    margin-bottom: 10px;
+  }
+
+  .interactive-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .productos-container {
+    padding: 10px;
+  }
+
+
+
+}
