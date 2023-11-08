@@ -5,12 +5,13 @@ import ProductoLi from './componentes/ProductoLi';
 function App() {
 
   const [productos, setProductos] = useState([])
+  const [loadingIntial, setLoadingIntial] = useState(false)
   const [loading, setLoading] = useState(false)
 
   function restartStocks() {
     console.log('restart')
     setLoading(true)
-    fetch('http://localhost:3000/reload-true')
+    fetch('https://pplenaexpress.onrender.com/reload-true')
       .then((response) => response.json())
       .then((data) => {
         const newProductos = [...data];
@@ -21,13 +22,20 @@ function App() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:3000/productos')
+    setLoadingIntial(true)
+    fetch('https://pplenaexpress.onrender.com/productos')
       .then((response) => response.json())
-      .then((data) => setProductos(data))
+      .then((data) => {
+        console.log(data)
+        setProductos(data);
+        setLoadingIntial(false)
+      })
+
       .catch((error) => console.error('Error al obtener los datos:', error));
   }, [])
 
   if (loading) return <div className='spinner-load-restart'></div>
+  if (loadingIntial) return <div className='spinner-load-restart'></div>
 
   return (
     <>

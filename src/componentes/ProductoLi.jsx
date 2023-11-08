@@ -6,11 +6,11 @@ function ProductoLi({ producto }) {
     const [stock,setStock] = useState(producto.stock)
 
     function definirFaltaDeStock(producto) {
-        console.log('solicitar', producto.stock)
+        console.log('solicitar', stock)
         const newStock = !stock
         setStock(newStock)
         
-        fetch(`http://localhost:3000/updateProduct/${producto.id}`, {
+        fetch(`https://pplenaexpress.onrender.com/updateProduct/${producto.id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
