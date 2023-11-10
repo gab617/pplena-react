@@ -12,10 +12,11 @@
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  border-radius: 1em;
 }
 
 .producto img {
-  width: 50%;
+  width: 85%;
   height: auto;
 }
 
@@ -57,7 +58,7 @@
 
 /* Estilos básicos del botón */
 .interactive-button {
-  margin: 0 auto;
+  margin: .5em auto;
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
@@ -65,10 +66,10 @@
   text-decoration: none;
   border: none;
   border-radius: 5px;
-  background-color: #007BFF;
+  background-color: #0d7106;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+  box-shadow: 0 4px 6px  #0d7106;;
   transition: all 0.3s ease;
 }
 
@@ -100,13 +101,24 @@
 }
 
 @media screen and (max-width: 450px) {
+  body{
+    background-color: #f2f2f2; /* Color de fondo */
+    color: #333; /* Color de texto principal */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+
   .productos-container {
+    margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
     /* Ajusta el ancho mínimo y distribuye en columnas iguales */
     gap: 20px;
     /* Espacio entre los elementos */
     list-style: none;
+    padding: 3px;
+
   }
 
   .header-buttons {
@@ -118,8 +130,20 @@
     font-size: 16px;
   }
 
-  .productos-container {
-    padding: 10px;
+
+  .header-buttons {
+    background: #3333332f;
+    position: fixed;
+    top: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: .5em;
+    border-radius: 1em;
+  }
+
+  .interactive-button {
+    margin: 1em;
   }
 
 

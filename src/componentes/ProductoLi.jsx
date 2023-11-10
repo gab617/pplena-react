@@ -38,7 +38,7 @@ function ProductoLi({ producto, actuProductosPedidos }) {
       </div>
       <div>
         <h3>{producto.nombre}</h3>
-        <p>Stock: {stock ? "Disponible" : "Agotado"}</p>
+        {/* <p>Stock: {stock ? "Disponible" : "Agotado"}</p> */}
       </div>
     </>
   )

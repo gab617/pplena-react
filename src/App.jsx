@@ -27,9 +27,9 @@ function App() {
 
     // Crea un elemento textarea temporal
     const tempTextArea = document.createElement('textarea');
-    const listaString = productosInstancia.map(prod => `ID: ${prod.id}, Nombre: ${prod.nombre}`).join('\n');
+    const listaString = productosInstancia.map(prod =>`*${prod.nombre}`).join('\n');
 
-    tempTextArea.value = listaString;
+    tempTextArea.value = `Lista de productos a reponer: \n${listaString}`;
 
     // Agrega el textarea temporal al cuerpo del documento
     document.body.appendChild(tempTextArea);
@@ -87,7 +87,6 @@ function App() {
       <div className='header-buttons'>
         <button className='interactive-button' onClick={restartStocks}>REINICIAR</button>
         <button className='interactive-button' onClick={crearStringParaEnviar}>Crear mensaje</button>
-
       </div>
       <ul className='productos-container'>
         {
