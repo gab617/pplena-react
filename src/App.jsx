@@ -12,7 +12,7 @@ function App() {
   function restartStocks() {
     console.log('restart')
     setLoading(true)
-    fetch('http://localhost:3000/reload-true')
+    fetch('https://pplenaexpress.onrender.com/reload-true')
       .then((response) => response.json())
       .then((data) => {
         const newProductos = [...data];
@@ -68,7 +68,7 @@ function App() {
 
   useEffect(() => {
     setLoadingIntial(true)
-    fetch('http://localhost:3000/productos')
+    fetch('https://pplenaexpress.onrender.com/productos')
       .then((response) => response.json())
       .then((data) => {
         console.log(data)
