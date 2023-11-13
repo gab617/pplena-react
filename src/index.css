@@ -1,3 +1,4 @@
+
 .productos-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -9,15 +10,15 @@
 
 .producto {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   cursor: pointer;
   border-radius: 1em;
 }
 
 .producto img {
-  width: 85%;
-  height: auto;
+  width: 80%;
+  height: 8vh;
 }
 
 .producto h3 {
@@ -110,7 +111,6 @@
   }
 
   .productos-container {
-    margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
     /* Ajusta el ancho mínimo y distribuye en columnas iguales */
@@ -122,6 +122,7 @@
   }
 
   .header-buttons {
+    margin-top: 1em;
     margin-bottom: 10px;
   }
 
@@ -134,18 +135,59 @@
   .header-buttons {
     background: #3333332f;
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 2em;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: .5em;
-    border-radius: 1em;
+    border-radius: .6em;
+  }
+
+  .header-buttons #buttons{
+    display: flex;
+    flex-direction: row;
   }
 
   .interactive-button {
     margin: 1em;
   }
 
+  #a-almacen{
+    background: #007bff;
+    border-radius: 2px;
+  }
+  #a-verduleria{
+    background: #40ff00be;
+    border-radius: 2px;
+  }
+  #a-otros{
+    background: #d0ff00c8;
+    border-radius: 2px;
+  }
+
+  #Almacen-ul{
+    background: #007bffa7;
+    margin-top: 7em;
+  }
+  #Verduleria-ul{
+    background: #40ff00a7;
+  }
+  #Otros-ul{
+    background: #d0ff00a7;
+
+  }
 
 
+  #links-categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #links-categorias a{
+    margin: 0 1em;
+    text-decoration: none;
+    padding: .4em;
+  }
 }

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import ProductoLi from './componentes/ProductoLi';
+import productosJSON from './assets/productos.json'
 
 function App() {
 
   const [productos, setProductos] = useState([])
+  const [productosNEWJSON, setproducotsNEWJSON] = useState(productosJSON)
   const [productosInstancia, setProductonInstancia] = useState([])
   const [loadingIntial, setLoadingIntial] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -27,7 +29,7 @@ function App() {
 
     // Crea un elemento textarea temporal
     const tempTextArea = document.createElement('textarea');
-    const listaString = productosInstancia.map(prod =>`*${prod.nombre}`).join('\n');
+    const listaString = productosInstancia.map(prod => `*${prod.nombre}`).join('\n');
 
     tempTextArea.value = `Lista de productos a reponer: \n${listaString}`;
 
@@ -42,8 +44,6 @@ function App() {
     // Elimina el textarea temporal
     document.body.removeChild(tempTextArea);
   }
-
-
 
   function actuProductosPedidos(productoItem, booleanStock) {
     console.log(productoItem, booleanStock, "aaa")
@@ -79,18 +79,59 @@ function App() {
       .catch((error) => console.error('Error al obtener los datos:', error));
   }, [])
 
+  const { almacen, verduleria, otros } = productosNEWJSON
+
+
   if (loading) return <div className='spinner-load-restart'></div>
   if (loadingIntial) return <div className='spinner-load-restart'></div>
 
   return (
     <>
       <div className='header-buttons'>
-        <button className='interactive-button' onClick={restartStocks}>REINICIAR</button>
-        <button className='interactive-button' onClick={crearStringParaEnviar}>Crear mensaje</button>
+        <div id='buttons'>
+          <button className='interactive-button' onClick={restartStocks}>REINICIAR</button>
+          <button className='interactive-button' onClick={crearStringParaEnviar}>Crear mensaje</button>
+        </div>
+        <div id='links-categorias'>
+          <a id='a-almacen' href="#Almacen-ul">Almacen</a>
+          <a id='a-verduleria' href="#Verduleria-ul">Verduleria</a>
+          <a id='a-otros' href="#Otros-ul">Otros</a>
+        </div>
       </div>
-      <ul className='productos-container'>
+
+      <ul id='Almacen-ul' className='productos-container'>
         {
-          productos.map(producto => {
+          almacen.map(producto => {
+            return (
+              <li key={producto.id}>
+                <ProductoLi
+                  producto={producto}
+                  actuProductosPedidos={actuProductosPedidos}
+                ></ProductoLi>
+              </li>
+            )
+          })
+        }
+      </ul>
+
+      <ul id='Verduleria-ul' className='productos-container'>
+        {
+          verduleria.map(producto => {
+            return (
+              <li key={producto.id}>
+                <ProductoLi
+                  producto={producto}
+                  actuProductosPedidos={actuProductosPedidos}
+                ></ProductoLi>
+              </li>
+            )
+          })
+        }
+      </ul>
+
+      <ul id='Otros-ul' className='productos-container'>
+        {
+          otros.map(producto => {
             return (
               <li key={producto.id}>
                 <ProductoLi
