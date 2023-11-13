@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function ProductoLi({ producto, actuProductosPedidos }) {
   const [stock, setStock] = useState(producto.stock)
+
+
 
   function agregarOeliminar(producto) {
     console.log('solicitar', stock)
@@ -31,6 +33,7 @@ function ProductoLi({ producto, actuProductosPedidos }) {
       }); */ /* Cada vez que se actualiza, se hace una llamada al servidor y actualiza el json que actua como base de datos, hay un error que al hacer solicitudes rapido se rompe todo. */
   }
 
+
   return (
     <>
       <div className={`producto ${stock ? "con-stock" : "agotado"}`} onClick={() => agregarOeliminar(producto)}>
@@ -38,7 +41,6 @@ function ProductoLi({ producto, actuProductosPedidos }) {
       </div>
       <div>
         <h3>{producto.nombre}</h3>
-        {/* <p>Stock: {stock ? "Disponible" : "Agotado"}</p> */}
       </div>
     </>
   )

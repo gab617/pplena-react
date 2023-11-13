@@ -121,6 +121,12 @@
 
   }
 
+  .producto img{
+    border-radius: .4em;
+    margin-top: .2em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  }
+
   .header-buttons {
     margin-top: 1em;
     margin-bottom: 10px;
@@ -163,7 +169,7 @@
     border-radius: 2px;
   }
   #a-otros{
-    background: #d0ff00c8;
+    background: #ffd900f6;
     border-radius: 2px;
   }
 
@@ -172,10 +178,10 @@
     margin-top: 7em;
   }
   #Verduleria-ul{
-    background: #40ff00a7;
+    background: #40ff00e1;
   }
   #Otros-ul{
-    background: #d0ff00a7;
+    background: #ffd900f6;
 
   }
 

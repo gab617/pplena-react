@@ -1,29 +1,23 @@
 import { useEffect, useState } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 import './App.css'
 import ProductoLi from './componentes/ProductoLi';
 import productosJSON from './assets/productos.json'
+smoothscroll.polyfill();
+
+/* PRINCIPALMENTE RECIBIA DATOS DE UN SERVIDOR EXTERNO CON LOS DATOS YA DEFINIDOS, PERO POR AHORA PARA DARLE USO Y EVITAR LA ESPERA DEL SERVIDOR EN RENDER, EL CUAL ENTRA EN INACTIVIDAD
+DESPUES DE UN TIEMPO ESTA FUNCIONANDO EN EL CLIENTE, CON TODOS LOS DATOS NECESARIOS (ES PEQUEÑA LA APP) */
+
 
 function App() {
 
-  const [productos, setProductos] = useState([])
-  const [productosNEWJSON, setproducotsNEWJSON] = useState(productosJSON)
+  /*   const [productos, setProductos] = useState([]) */
+  const [productosNEWJSON, setProductosNEWJSON] = useState(productosJSON)
   const [productosInstancia, setProductonInstancia] = useState([])
   const [loadingIntial, setLoadingIntial] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  function restartStocks() {
-    console.log('restart')
-    setLoading(true)
-    fetch('https://pplenaexpress.onrender.com/reload-true')
-      .then((response) => response.json())
-      .then((data) => {
-        const newProductos = [...data];
-        console.log(newProductos)
-        setProductos(newProductos);
-        setProductonInstancia([])
-        setLoading(false)
-      })
-  }
+
 
   function crearStringParaEnviar() {
 
@@ -66,21 +60,69 @@ function App() {
     console.log(productosInstancia)
   }, [productosInstancia])
 
-  useEffect(() => {
-    setLoadingIntial(true)
-    fetch('https://pplenaexpress.onrender.com/productos')
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data)
-        setProductos(data);
-        setLoadingIntial(false)
-      })
+  function reloadProductos() {
+    const newProds = productosJSON
+    setProductosNEWJSON(newProds)
+  }
 
-      .catch((error) => console.error('Error al obtener los datos:', error));
-  }, [])
+  function restartLocal() {
+    (async () => {
+      setLoadingIntial(true)
+
+      try {
+        // Código asíncrono que espera la resolución de una promesa
+        await reloadProductos();
+      } catch (error) {
+        console.error('Error:', error);
+      }
+      setLoadingIntial(false)
+
+    })()
+    const newProds = productosJSON
+    console.log(newProds)
+    setProductosNEWJSON(newProds)
+    setProductonInstancia([])
+  }
 
   const { almacen, verduleria, otros } = productosNEWJSON
 
+
+
+
+  const ordenarAlfabeticamente = (datos) => {
+    const nuevosDatosOrdenados = [...datos];
+    nuevosDatosOrdenados.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    return nuevosDatosOrdenados;
+  }
+
+
+
+  /*   function restartStocks() {
+      console.log('restart')
+      setLoading(true)
+      fetch('https://pplenaexpress.onrender.com/reload-true')
+        .then((response) => response.json())
+        .then((data) => {
+          const newProductos = [...data];
+          console.log(newProductos)
+          setProductos(newProductos);
+          setProductonInstancia([])
+          setLoading(false)
+        })
+    }
+   */
+  /*   useEffect(() => {
+      setLoadingIntial(true)
+      fetch('https://pplenaexpress.onrender.com/productos')
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data)
+          setProductos(data);
+          setLoadingIntial(false)
+        })
+  
+        .catch((error) => console.error('Error al obtener los datos:', error));
+    }, []) */
 
   if (loading) return <div className='spinner-load-restart'></div>
   if (loadingIntial) return <div className='spinner-load-restart'></div>
@@ -89,7 +131,7 @@ function App() {
     <>
       <div className='header-buttons'>
         <div id='buttons'>
-          <button className='interactive-button' onClick={restartStocks}>REINICIAR</button>
+          <button className='interactive-button' onClick={restartLocal}>REINICIAR</button>
           <button className='interactive-button' onClick={crearStringParaEnviar}>Crear mensaje</button>
         </div>
         <div id='links-categorias'>
@@ -137,6 +179,7 @@ function App() {
                 <ProductoLi
                   producto={producto}
                   actuProductosPedidos={actuProductosPedidos}
+                  productosInstancia={productosInstancia}
                 ></ProductoLi>
               </li>
             )
