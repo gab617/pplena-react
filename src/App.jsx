@@ -66,6 +66,7 @@ function App() {
   }
 
   function restartLocal() {
+    if (productosInstancia.length == 0) return
     (async () => {
       setLoadingIntial(true)
 
@@ -91,7 +92,6 @@ function App() {
     almac.sort((a, b) => a.nombre.localeCompare(b.nombre));
     verdul.sort((a, b) => a.nombre.localeCompare(b.nombre));
     otro.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    console.log(almac,verdul, otro)
     return [almac,verdul,otro];
   }
 
