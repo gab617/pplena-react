@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 import './App.css'
-import ProductoLi from './componentes/ProductoLi';
 import productosJSON from './assets/productos.json'
+import { UlProductos } from './componentes/UlProductos';
+import { Header } from './componentes/Header';
 smoothscroll.polyfill();
 
 /* PRINCIPALMENTE RECIBIA DATOS DE UN SERVIDOR EXTERNO CON LOS DATOS YA DEFINIDOS, PERO POR AHORA PARA DARLE USO Y EVITAR LA ESPERA DEL SERVIDOR EN RENDER, EL CUAL ENTRA EN INACTIVIDAD
@@ -15,8 +16,7 @@ function App() {
   const [productosNEWJSON, setProductosNEWJSON] = useState(productosJSON)
   const [productosInstancia, setProductonInstancia] = useState([])
   const [loadingIntial, setLoadingIntial] = useState(false)
-  const [loading, setLoading] = useState(false)
-
+  /*   const [loading, setLoading] = useState(false) */
 
 
   function crearStringParaEnviar() {
@@ -40,7 +40,6 @@ function App() {
   }
 
   function actuProductosPedidos(productoItem, booleanStock) {
-    console.log(productoItem, booleanStock, "aaa")
     let newProducts = []
     if (booleanStock) {/* Si es true hay que sacarlo */
       console.log(productosInstancia)
@@ -51,27 +50,22 @@ function App() {
     } else {/* Si es false */
       newProducts = [...productosInstancia, productoItem]
       console.log(newProducts, 'AGREGAR')
-
     }
     setProductonInstancia(newProducts)
   }
 
-  useEffect(() => {
-    console.log(productosInstancia)
-  }, [productosInstancia])
 
   function reloadProductos() {
     const newProds = productosJSON
     setProductosNEWJSON(newProds)
   }
 
-  function restartLocal() {
+  function restartLocal() {/* asincronia controlada para resetear la lista */
     if (productosInstancia.length == 0) return
     (async () => {
       setLoadingIntial(true)
 
       try {
-        // Código asíncrono que espera la resolución de una promesa
         await reloadProductos();
       } catch (error) {
         console.error('Error:', error);
@@ -88,14 +82,14 @@ function App() {
   const { almacen, verduleria, otros } = productosNEWJSON
 
 
-  const ordenarAlfabeticamente = (almac,verdul,otro) => {
+  const ordenarAlfabeticamente = (almac, verdul, otro) => {
     almac.sort((a, b) => a.nombre.localeCompare(b.nombre));
     verdul.sort((a, b) => a.nombre.localeCompare(b.nombre));
     otro.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    return [almac,verdul,otro];
+    return [almac, verdul, otro];
   }
 
-  ordenarAlfabeticamente(almacen,verduleria,otros)
+  ordenarAlfabeticamente(almacen, verduleria, otros)
 
 
 
@@ -126,69 +120,23 @@ function App() {
         .catch((error) => console.error('Error al obtener los datos:', error));
     }, []) */
 
-  if (loading) return <div className='spinner-load-restart'></div>
+  /*   if (loading) return <div className='spinner-load-restart'></div> */
   if (loadingIntial) return <div className='spinner-load-restart'></div>
 
   return (
     <>
-      <div className='header-buttons'>
-        <div id='buttons'>
-          <button className='interactive-button' onClick={restartLocal}>REINICIAR</button>
-          <button className='interactive-button' onClick={crearStringParaEnviar}>Crear mensaje</button>
-        </div>
-        <div id='links-categorias'>
-          <a id='a-almacen' href="#Almacen-ul">Almacen</a>
-          <a id='a-verduleria' href="#Verduleria-ul">Verduleria</a>
-          <a id='a-otros' href="#Otros-ul">Otros</a>
-        </div>
-      </div>
+      <Header
+        restartLocal={restartLocal}
+        crearStringParaEnviar={crearStringParaEnviar}
+      />
 
-      <ul id='Almacen-ul' className='productos-container'>
-        {
-          almacen.map(producto => {
-            return (
-              <li key={producto.id}>
-                <ProductoLi
-                  producto={producto}
-                  actuProductosPedidos={actuProductosPedidos}
-                ></ProductoLi>
-              </li>
-            )
-          })
-        }
-      </ul>
-
-      <ul id='Verduleria-ul' className='productos-container'>
-        {
-          verduleria.map(producto => {
-            return (
-              <li key={producto.id}>
-                <ProductoLi
-                  producto={producto}
-                  actuProductosPedidos={actuProductosPedidos}
-                ></ProductoLi>
-              </li>
-            )
-          })
-        }
-      </ul>
-
-      <ul id='Otros-ul' className='productos-container'>
-        {
-          otros.map(producto => {
-            return (
-              <li key={producto.id}>
-                <ProductoLi
-                  producto={producto}
-                  actuProductosPedidos={actuProductosPedidos}
-                  productosInstancia={productosInstancia}
-                ></ProductoLi>
-              </li>
-            )
-          })
-        }
-      </ul>
-
+      <UlProductos
+        almacen={almacen}
+        verduleria={verduleria}
+        otros={otros}
+        actuProductosPedidos={actuProductosPedidos}
+      />
+      
     </>
   )
 }
