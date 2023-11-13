@@ -87,13 +87,15 @@ function App() {
   const { almacen, verduleria, otros } = productosNEWJSON
 
 
-
-
-  const ordenarAlfabeticamente = (datos) => {
-    const nuevosDatosOrdenados = [...datos];
-    nuevosDatosOrdenados.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    return nuevosDatosOrdenados;
+  const ordenarAlfabeticamente = (almac,verdul,otro) => {
+    almac.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    verdul.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    otro.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    console.log(almac,verdul, otro)
+    return [almac,verdul,otro];
   }
+
+  ordenarAlfabeticamente(almacen,verduleria,otros)
 
 
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 
 function ProductoLi({ producto, actuProductosPedidos }) {
   const [stock, setStock] = useState(producto.stock)
