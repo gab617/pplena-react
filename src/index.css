@@ -1,4 +1,3 @@
-
 .productos-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -6,7 +5,7 @@
   gap: 20px;
   /* Espacio entre los elementos */
   list-style: none;
-  box-shadow: 10px 10px 10px rgb(0,0,0, 0.1) inset;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1) inset;
 }
 
 .producto {
@@ -16,7 +15,7 @@
   cursor: pointer;
   border-radius: 1em;
   box-shadow:
-  10px 10px 10px rgb(0,0,0, 0.5) inset;
+    10px 10px 10px rgb(0, 0, 0, 0.5) inset;
 }
 
 .producto img {
@@ -74,7 +73,7 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 10px 10px 10px rgb(0,0,0, 0.1) inset, .3em 4px 20px  #0d7106be;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1) inset, .3em 4px 20px #0d7106be;
 }
 
 /* Efecto de sombra al pasar el mouse */
@@ -105,28 +104,36 @@
 }
 
 @media screen and (max-width: 450px) {
-  body{
-    background-color: #f2f2f2; /* Color de fondo */
-    color: #333; /* Color de texto principal */
-    font-family: Arial, sans-serif; /* Fuente legible */
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el relleno predeterminado */
+  body {
+    background-color: #f2f2f2;
+    /* Color de fondo */
+    color: #1a1919;
+    /* Color de texto principal */
+    font-family: Arial, sans-serif;
+    /* Fuente legible */
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
   }
 
   .productos-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
     /* Ajusta el ancho mínimo y distribuye en columnas iguales */
-    gap: 20px;
+    gap: .7em;
     /* Espacio entre los elementos */
     list-style: none;
-    padding: 3px;
+    padding: 2px;
 
   }
 
-  .producto img{
+  .producto {}
+
+  .producto img {
     border-radius: .4em;
     margin-top: .2em;
+    width: 87%;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   }
 
@@ -154,7 +161,7 @@
     border-radius: .6em;
   }
 
-  .header-buttons #buttons{
+  .header-buttons #buttons {
     display: flex;
     flex-direction: row;
   }
@@ -163,44 +170,52 @@
     margin: 1em;
   }
 
-  #a-almacen{
+  #a-almacen {
     background: #007bff;
     border-radius: 2px;
     box-shadow: 10px 10px 10px rgba(45, 45, 212, 0.63) inset;
 
   }
-  #a-verduleria{
+
+  #a-verduleria {
     background: #40ff00be;
     border-radius: 2px;
     box-shadow: 10px 10px 10px rgba(50, 212, 45, 0.63) inset;
 
   }
-  #a-otros{
+
+  #a-otros {
     background: #ffd900f6;
     border-radius: 2px;
     box-shadow: 10px 10px 10px rgba(201, 212, 45, 0.63) inset;
 
   }
 
-  #Almacen-ul{
-    background: #007bffa7;
+  #Almacen-ul {
+    background: rgb(126, 118, 218);
+    background: linear-gradient(52deg, rgba(126, 118, 218, 1) 0%, rgba(35, 152, 208, 1) 100%);
     margin-top: 7em;
   }
-  #Verduleria-ul{
-    background: #40ff00e1;
-  }
-  #Otros-ul{
-    background: #ffd900f6;
 
+  #Verduleria-ul {
+    background: rgb(95, 233, 97);
+    background: linear-gradient(52deg, rgba(95, 233, 97, 1) 0%, rgba(21, 163, 38, 1) 100%);
   }
 
+  #Otros-ul {
+    background: rgb(236, 235, 132);
+    background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(227, 211, 22, 1) 100%);
 
-  #links-categorias{
+  }
+
+
+  #links-categorias {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  #links-categorias a{
+
+  #links-categorias a {
     margin: 0 1em;
     text-decoration: none;
     padding: .4em;
