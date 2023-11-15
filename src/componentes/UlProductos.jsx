@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import ProductoLi from './ProductoLi'
 
-export function UlProductos({ almacen, verduleria, otros, actuProductosPedidos }) {
+export function UlProductos({ almacen, verduleria, otros, farmacia ,condimentos, actuProductosPedidos }) {
+    console.log(farmacia)
     return (
         <>
             <ul id='Almacen-ul' className='productos-container'>
@@ -34,6 +35,36 @@ export function UlProductos({ almacen, verduleria, otros, actuProductosPedidos }
                 }
             </ul>
 
+            <ul id='Condimentos-ul' className='productos-container'>
+                {
+                    condimentos.map(producto => {
+                        return (
+                            <li key={producto.id}>
+                                <ProductoLi
+                                    producto={producto}
+                                    actuProductosPedidos={actuProductosPedidos}
+                                ></ProductoLi>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
+
+            <ul id='Farmacia-ul' className='productos-container'>
+                {
+                    farmacia.map(producto => {
+                        return (
+                            <li key={producto.id}>
+                                <ProductoLi
+                                    producto={producto}
+                                    actuProductosPedidos={actuProductosPedidos}
+                                ></ProductoLi>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
+
             <ul id='Otros-ul' className='productos-container'>
                 {
                     otros.map(producto => {
@@ -48,6 +79,10 @@ export function UlProductos({ almacen, verduleria, otros, actuProductosPedidos }
                     })
                 }
             </ul>
+
+
+
+
         </>
     )
 }

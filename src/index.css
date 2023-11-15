@@ -109,7 +109,8 @@
     /* Color de fondo */
     color: #1a1919;
     /* Color de texto principal */
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
+
     /* Fuente legible */
     margin: 0;
     /* Elimina el margen predeterminado */
@@ -128,7 +129,6 @@
 
   }
 
-  .producto {}
 
   .producto img {
     border-radius: .4em;
@@ -149,7 +149,7 @@
 
 
   .header-buttons {
-    background: #3333332f;
+    background: #3333336b;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -170,6 +170,14 @@
     margin: 1em;
   }
 
+  #buttons {
+    margin: 0 auto;
+  }
+
+  a {
+    font-size: 1.1em;
+  }
+
   #a-almacen {
     background: #007bff;
     border-radius: 2px;
@@ -184,39 +192,62 @@
 
   }
 
+  #a-condimentos {
+    background: #ff00ffd0;
+    border-radius: 2px;
+    box-shadow: 10px 10px 10px rgba(179, 45, 212, 0.63) inset;
+  }
+
+  #a-farmacia{
+    background: #3aa1b4;
+    border-radius: 2px;
+    box-shadow: 10px 10px 10px rgba(45, 206, 212, 0.63) inset;
+  }
+
   #a-otros {
     background: #ffd900f6;
     border-radius: 2px;
     box-shadow: 10px 10px 10px rgba(201, 212, 45, 0.63) inset;
-
   }
 
   #Almacen-ul {
     background: rgb(126, 118, 218);
-    background: linear-gradient(52deg, rgba(126, 118, 218, 1) 0%, rgba(35, 152, 208, 1) 100%);
-    margin-top: 7em;
+    background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(35, 152, 208, 1) 100%);
+    margin-top: 7.5em;
   }
 
   #Verduleria-ul {
     background: rgb(95, 233, 97);
-    background: linear-gradient(52deg, rgba(95, 233, 97, 1) 0%, rgba(21, 163, 38, 1) 100%);
+    background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(21, 163, 38, 1) 100%);
   }
+
+  #Condimentos-ul {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(253, 29, 29, 0.34217436974789917) 50%, rgba(252, 176, 69, 1) 100%);
+  }
+
+  #Farmacia-ul {
+    background: rgb(58,161,180);
+    background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(71,133,120,0.711922268907563) 76%, rgba(252,176,69,0.6250875350140056) 100%);}
 
   #Otros-ul {
     background: rgb(236, 235, 132);
     background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(227, 211, 22, 1) 100%);
-
   }
 
 
+  #categorias-top{
+    margin-bottom: 1.2em;
+  }
+
   #links-categorias {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
 
   #links-categorias a {
-    margin: 0 1em;
+    margin: 0 .5em;
     text-decoration: none;
     padding: .4em;
   }

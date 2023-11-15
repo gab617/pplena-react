@@ -79,17 +79,19 @@ function App() {
     setProductonInstancia([])
   }
 
-  const { almacen, verduleria, otros } = productosNEWJSON
+  const { almacen, verduleria, condimentos, farmacia, otros} = productosNEWJSON
 
 
-  const ordenarAlfabeticamente = (almac, verdul, otro) => {
+  const ordenarAlfabeticamente = (almac, verdul, farm, otro, condiment) => {
     almac.sort((a, b) => a.nombre.localeCompare(b.nombre));
     verdul.sort((a, b) => a.nombre.localeCompare(b.nombre));
     otro.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    return [almac, verdul, otro];
+    condiment.sort((a,b)=>a.nombre.localeCompare(b.nombre))
+    farm.sort((a,b)=>a.nombre.localeCompare(b.nombre))
+    return [almac, verdul, farm, otro, condiment];
   }
 
-  ordenarAlfabeticamente(almacen, verduleria, otros)
+  ordenarAlfabeticamente(almacen, verduleria, farmacia, otros, condimentos)
 
 
 
@@ -133,7 +135,9 @@ function App() {
       <UlProductos
         almacen={almacen}
         verduleria={verduleria}
+        farmacia={farmacia}
         otros={otros}
+        condimentos={condimentos}
         actuProductosPedidos={actuProductosPedidos}
       />
       

@@ -1,5 +1,5 @@
 {
-    "almacen":[
+    "almacen": [
         {
             "id": 1,
             "nombre": "Galletas Pepas",
@@ -30,7 +30,6 @@
             "stock": true,
             "imagen": "/imagenes/galletas_pitusas.jfif"
         },
-
         {
             "id": 7,
             "nombre": "Cerveza",
@@ -553,7 +552,6 @@
             "stock": true,
             "imagen": "/imagenes/cigarrillos_redpoint.jfif"
         },
-
         {
             "id": 95,
             "nombre": "Desodorante Rexona",
@@ -619,6 +617,120 @@
             "nombre": "Lata Garbanzo",
             "stock": true,
             "imagen": "/imagenes/lata_garbanzo.jfif"
+        },
+        {
+            "id": 152,
+            "nombre": "Lamparas",
+            "stock": true,
+            "imagen": "/imagenes/lamparas.jfif"
+        },
+        {
+            "id": 153,
+            "nombre": "Ketchup Chiquito",
+            "stock": true,
+            "imagen": "/imagenes/ketchup_chiquito.jfif"
+        },
+        {
+            "id": 154,
+            "nombre": "Mostaza Chico",
+            "stock": true,
+            "imagen": "/imagenes/mostaza_chico.jfif"
+        },
+        {
+            "id": 155,
+            "nombre": "Polvo para Hornear",
+            "stock": true,
+            "imagen": "/imagenes/polvo_hornear.jfif"
+        },
+        {
+            "id": 156,
+            "nombre": "Polvo para Tortas",
+            "stock": true,
+            "imagen": "/imagenes/polvo_tortas.jfif"
+        },
+        {
+            "id": 157,
+            "nombre": "Lata Arvejas",
+            "stock": true,
+            "imagen": "/imagenes/lata_arvejas.jfif"
+        },
+        {
+            "id": 158,
+            "nombre": "Avena",
+            "stock": true,
+            "imagen": "/imagenes/avena.jfif"
+        },
+        {
+            "id": 159,
+            "nombre": "Agua",
+            "stock": true,
+            "imagen": "/imagenes/agua.jfif"
+        },
+        {
+            "id": 160,
+            "nombre": "Carbon",
+            "stock": true,
+            "imagen": "/imagenes/carbon.jfif"
+        },
+        {
+            "id": 163,
+            "nombre": "Dulce de Leche",
+            "stock": true,
+            "imagen": "/imagenes/dulce_leche.jfif"
+        },
+        {
+            "id": 164,
+            "nombre": "Salchichas",
+            "stock": true,
+            "imagen": "/imagenes/salchichas.jfif"
+        },
+        {
+            "id": 165,
+            "nombre": "Hamburguesas de 72",
+            "stock": true,
+            "imagen": "/imagenes/hamburguesas_72.jfif"
+        },
+        {
+            "id": 166,
+            "nombre": "Hamburguesas Alto Rancho",
+            "stock": true,
+            "imagen": "/imagenes/hamburguesas_alto_rancho.jfif"
+        },
+        {
+            "id": 168,
+            "nombre": "Pilas",
+            "stock": true,
+            "imagen": "/imagenes/pilas.jfif"
+        },
+        {
+            "id": 169,
+            "nombre": "La Gotita",
+            "stock": true,
+            "imagen": "/imagenes/la_gotita.jfif"
+        },
+        {
+            "id": 170,
+            "nombre": "Chiclches Beldent",
+            "stock": true,
+            "imagen": "/imagenes/chicles_beldent.jfif"
+        },
+        {
+            "id": 171,
+            "nombre": "Levaduras",
+            "stock": true,
+            "imagen": "/imagenes/levadura.jfif"
+        },
+        {
+            "id": 172,
+            "nombre": "Shampoo Plusbell",
+            "stock": true,
+            "imagen": "/imagenes/shampoo_plusbelle.jfif"
+        },
+        {
+            "id": 117,
+            "nombre": "Yogurt",
+            "stock": true,
+            "imagen": "/imagenes/yogurt.jfif"
         }
     ],
     "verduleria": [
@@ -689,12 +801,6 @@
             "imagen": "/imagenes/cebollita_deverdeo.jfif"
         },
         {
-            "id": 117,
-            "nombre": "Perejil",
-            "stock": true,
-            "imagen": "/imagenes/perejil.jfif"
-        },
-        {
             "id": 118,
             "nombre": "Huevo",
             "stock": true,
@@ -711,6 +817,24 @@
             "nombre": "Lechuga",
             "stock": true,
             "imagen": "/imagenes/lechuga.jfif"
+        },
+        {
+            "id": 143,
+            "nombre": "Jengibre",
+            "stock": true,
+            "imagen": "/imagenes/jengibre.jfif"
+        },
+        {
+            "id": 144,
+            "nombre": "Ajo",
+            "stock": true,
+            "imagen": "/imagenes/ajo.jfif"
+        },
+        {
+            "id": 145,
+            "nombre": "Cilantro",
+            "stock": true,
+            "imagen": "/imagenes/cilantro.jfif"
         }
     ],
     "otros": [
@@ -845,6 +969,94 @@
             "nombre": "Caramelos D.R.F.",
             "stock": true,
             "imagen": "/imagenes/caramelos_drf.jfif"
+        }
+    ],
+    "condimentos": [
+        {
+            "id": 147,
+            "nombre": "Oregano",
+            "stock": true,
+            "imagen": "/imagenes/oregano.jfif"
+        },
+        {
+            "id": 148,
+            "nombre": "Pimenton",
+            "stock": true,
+            "imagen": "/imagenes/pimenton.jfif"
+        },
+        {
+            "id": 149,
+            "nombre": "Condimentos para Pizza",
+            "stock": true,
+            "imagen": "/imagenes/condimentos_pizza.jfif"
+        },
+        {
+            "id": 150,
+            "nombre": "Provenzal",
+            "stock": true,
+            "imagen": "/imagenes/provenzal.jfif"
+        },
+        {
+            "id": 151,
+            "nombre": "Aji Molido",
+            "stock": true,
+            "imagen": "/imagenes/aji_molido.jfif"
+        }
+    ],
+    "farmacia": [
+        {
+            "id": 161,
+            "nombre": "Toallitas Humedas",
+            "stock": true,
+            "imagen": "/imagenes/toallitas_humedas.jfif"
+        },
+        {
+            "id": 162,
+            "nombre": "Pañales",
+            "stock": true,
+            "imagen": "/imagenes/panales.jfif"
+        },
+        {
+            "id": 173,
+            "nombre": "Alical",
+            "stock": true,
+            "imagen": "/imagenes/alical.jfif"
+        },
+        {
+            "id": 174,
+            "nombre": "Actron",
+            "stock": true,
+            "imagen": "/imagenes/actron.jfif"
+        },
+        {
+            "id": 175,
+            "nombre": "Bicarbonato",
+            "stock": true,
+            "imagen": "/imagenes/bicarbonato.jfif"
+        },
+        {
+            "id": 176,
+            "nombre": "Buscapina",
+            "stock": true,
+            "imagen": "/imagenes/buscapina.jfif"
+        },
+        {
+            "id": 177,
+            "nombre": "Tafirol",
+            "stock": true,
+            "imagen": "/imagenes/tafirol.jfif"
+        },
+        {
+            "id": 178,
+            "nombre": "Migral",
+            "stock": true,
+            "imagen": "/imagenes/migral.jfif"
+        },
+        {
+            "id": 179,
+            "nombre": "Sertal",
+            "stock": true,
+            "imagen": "/imagenes/sertal.jfif"
         }
     ]
 }
