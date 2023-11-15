@@ -156,10 +156,9 @@
     align-items: center;
     top: 2em;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -46%);
     text-align: center;
-    padding: .5em;
-    border-radius: .6em;
+    padding-bottom: 1.1em;
   }
 
   .header-buttons #buttons {
