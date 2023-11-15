@@ -15,7 +15,7 @@ export function Header({ restartLocal, crearStringParaEnviar }) {
                         <a id='a-condimentos' href="#Condimentos-ul">Condimentos</a>
                     </div>
 
-                    <div>
+                    <div id='links-categorias2'>
                         <a id='a-farmacia' href="#Farmacia-ul">Farmacia</a>
                         <a id='a-otros' href="#Otros-ul">Otros</a>
                     </div>
