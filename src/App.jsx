@@ -79,15 +79,15 @@ function App() {
     setProductonInstancia([])
   }
 
-  const { almacen, verduleria, condimentos, farmacia, otros} = productosNEWJSON
+  const { almacen, verduleria, condimentos, farmacia, otros } = productosNEWJSON
 
 
   const ordenarAlfabeticamente = (almac, verdul, farm, otro, condiment) => {
     almac.sort((a, b) => a.nombre.localeCompare(b.nombre));
     verdul.sort((a, b) => a.nombre.localeCompare(b.nombre));
     otro.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    condiment.sort((a,b)=>a.nombre.localeCompare(b.nombre))
-    farm.sort((a,b)=>a.nombre.localeCompare(b.nombre))
+    condiment.sort((a, b) => a.nombre.localeCompare(b.nombre))
+    farm.sort((a, b) => a.nombre.localeCompare(b.nombre))
     return [almac, verdul, farm, otro, condiment];
   }
 
@@ -127,10 +127,7 @@ function App() {
 
   return (
     <>
-      <Header
-        restartLocal={restartLocal}
-        crearStringParaEnviar={crearStringParaEnviar}
-      />
+
 
       <UlProductos
         almacen={almacen}
@@ -140,7 +137,11 @@ function App() {
         condimentos={condimentos}
         actuProductosPedidos={actuProductosPedidos}
       />
-      
+      <Header
+        restartLocal={restartLocal}
+        crearStringParaEnviar={crearStringParaEnviar}
+      />
+
     </>
   )
 }

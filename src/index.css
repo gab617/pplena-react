@@ -149,13 +149,17 @@
   .header-buttons {
     width: 100%;
     background: #3333336b;
+    position: -webkit-sticky;
     position: sticky;
     display: flex;
     flex-direction: column;
-    top: 0em;
+    bottom: 0em;
     left: 50%;
     text-align: center;
     margin: 0;
+    box-sizing: border-box;
+    
+    
   }
 
   .header-buttons #buttons {
