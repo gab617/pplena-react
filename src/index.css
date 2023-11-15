@@ -147,7 +147,7 @@
 
 
   .header-buttons {
-
+    width: 99%;
     background: #3333336b;
     position: fixed;
     display: flex;
@@ -215,7 +215,7 @@
   #Almacen-ul {
     background: rgb(126, 118, 218);
     background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(35, 152, 208, 1) 100%);
-    margin-top: 7.5em;
+    margin-top: 7.1em;
   }
 
   #Verduleria-ul {
