@@ -151,16 +151,16 @@
     background: #3333336b;
     position: -webkit-sticky;
     position: sticky;
-    display: flex;
     flex-direction: column;
     bottom: 0em;
     left: 50%;
     text-align: center;
     margin: 0;
-    box-sizing: border-box;
     
     
   }
+
+
 
   .header-buttons #buttons {
     display: flex;

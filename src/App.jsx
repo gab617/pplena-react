@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 import './App.css'
 import productosJSON from './assets/productos.json'
 import { UlProductos } from './componentes/UlProductos';
 import { Header } from './componentes/Header';
 smoothscroll.polyfill();
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import Menu from './componentes/Menu/Menu';
+import Carrito from './componentes/Carrito/Carrito';
+import ContextProducts from './Context/ContextProducts';
 
 /* PRINCIPALMENTE RECIBIA DATOS DE UN SERVIDOR EXTERNO CON LOS DATOS YA DEFINIDOS, PERO POR AHORA PARA DARLE USO Y EVITAR LA ESPERA DEL SERVIDOR EN RENDER, EL CUAL ENTRA EN INACTIVIDAD
 DESPUES DE UN TIEMPO ESTA FUNCIONANDO EN EL CLIENTE, CON TODOS LOS DATOS NECESARIOS (ES PEQUEÑA LA APP) */
@@ -12,88 +16,16 @@ DESPUES DE UN TIEMPO ESTA FUNCIONANDO EN EL CLIENTE, CON TODOS LOS DATOS NECESAR
 
 function App() {
 
+  /* CONTEXTO */
+  const {productosNEWJSON,
+    crearStringParaEnviar, actuProductosPedidos, restartLocal,
+    productosInstancia
+  } = useContext(ContextProducts)
+
   /*   const [productos, setProductos] = useState([]) */
-  const [productosNEWJSON, setProductosNEWJSON] = useState(productosJSON)
-  const [productosInstancia, setProductonInstancia] = useState([])
-  const [loadingIntial, setLoadingIntial] = useState(false)
+  /* const [productosNEWJSON, setProductosNEWJSON] = useState(productosJSON) */
+
   /*   const [loading, setLoading] = useState(false) */
-
-
-  function crearStringParaEnviar() {
-
-    // Crea un elemento textarea temporal
-    const tempTextArea = document.createElement('textarea');
-    const listaString = productosInstancia.map(prod => `*${prod.nombre}`).join('\n');
-
-    tempTextArea.value = `Lista de productos a reponer: \n${listaString}`;
-
-    // Agrega el textarea temporal al cuerpo del documento
-    document.body.appendChild(tempTextArea);
-    // Selecciona el texto en el textarea
-    tempTextArea.select();
-
-    // Intenta copiar el texto al portapapeles
-    document.execCommand('copy');
-
-    // Elimina el textarea temporal
-    document.body.removeChild(tempTextArea);
-  }
-
-  function actuProductosPedidos(productoItem, booleanStock) {
-    let newProducts = []
-    if (booleanStock) {/* Si es true hay que sacarlo */
-      console.log(productosInstancia)
-      newProducts = productosInstancia.filter(objeto => objeto.id !== productoItem.id);
-
-      console.log(newProducts, 'BORRAR')
-
-    } else {/* Si es false */
-      newProducts = [...productosInstancia, productoItem]
-      console.log(newProducts, 'AGREGAR')
-    }
-    setProductonInstancia(newProducts)
-  }
-
-
-  function reloadProductos() {
-    const newProds = productosJSON
-    setProductosNEWJSON(newProds)
-  }
-
-  function restartLocal() {/* asincronia controlada para resetear la lista */
-    if (productosInstancia.length == 0) return
-    (async () => {
-      setLoadingIntial(true)
-
-      try {
-        await reloadProductos();
-      } catch (error) {
-        console.error('Error:', error);
-      }
-      setLoadingIntial(false)
-
-    })()
-    const newProds = productosJSON
-    console.log(newProds)
-    setProductosNEWJSON(newProds)
-    setProductonInstancia([])
-  }
-
-  const { almacen, verduleria, condimentos, farmacia, otros } = productosNEWJSON
-
-
-  const ordenarAlfabeticamente = (almac, verdul, farm, otro, condiment) => {
-    almac.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    verdul.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    otro.sort((a, b) => a.nombre.localeCompare(b.nombre));
-    condiment.sort((a, b) => a.nombre.localeCompare(b.nombre))
-    farm.sort((a, b) => a.nombre.localeCompare(b.nombre))
-    return [almac, verdul, farm, otro, condiment];
-  }
-
-  ordenarAlfabeticamente(almacen, verduleria, farmacia, otros, condimentos)
-
-
 
   /*   function restartStocks() {
       console.log('restart')
@@ -123,26 +55,51 @@ function App() {
     }, []) */
 
   /*   if (loading) return <div className='spinner-load-restart'></div> */
-  if (loadingIntial) return <div className='spinner-load-restart'></div>
+
 
   return (
-    <>
+    <Router>
+      <Routes>
+
+        <Route
+          path="/products"
+          element={
+            <>
+              <UlProductos
+                actuProductosPedidos={actuProductosPedidos}
+              />
+              <Header
+                restartLocal={restartLocal}
+                crearStringParaEnviar={crearStringParaEnviar}
+              />
+            </>}
+
+        />
+
+        <Route
+          path='/inicio'
+          element={
+            <Menu/>
+          }
+
+        />
+
+        <Route
+          path='carrito'
+          element={
+            <Carrito
+            productosInstancia={productosInstancia}
+            />
+          }
+        />
 
 
-      <UlProductos
-        almacen={almacen}
-        verduleria={verduleria}
-        farmacia={farmacia}
-        otros={otros}
-        condimentos={condimentos}
-        actuProductosPedidos={actuProductosPedidos}
-      />
-      <Header
-        restartLocal={restartLocal}
-        crearStringParaEnviar={crearStringParaEnviar}
-      />
 
-    </>
+
+
+      </Routes>
+
+    </Router>
   )
 }
 

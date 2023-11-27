@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import {  useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import ContextProducts from "../Context/ContextProducts"
 
 function ProductoLi({ producto, actuProductosPedidos }) {
   const [stock, setStock] = useState(producto.stock)
+  const { resetIndividualLoading , restartLocal, reloadProductos} = useContext(ContextProducts)
 
 
 
@@ -13,25 +15,28 @@ function ProductoLi({ producto, actuProductosPedidos }) {
     setStock(newStock)
     actuProductosPedidos(producto, newStock)
 
-/*     fetch(`http://localhost:3000/updateProduct/${producto.id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ stock: newStock }), // Enviar los datos editados
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Manejar la respuesta del servidor, que contendrá los datos actualizados
-        console.log(data, "ACTUALIZADA")
-
-      })
-      .then(() => actuProductosPedidos(producto, newStock)) 
-      .catch((error) => {
-        // Manejar errores
-        console.log(error, "rror")
-      }); */ /* Cada vez que se actualiza, se hace una llamada al servidor y actualiza el json que actua como base de datos, hay un error que al hacer solicitudes rapido se rompe todo. */
+    /*     fetch(`http://localhost:3000/updateProduct/${producto.id}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ stock: newStock }), // Enviar los datos editados
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Manejar la respuesta del servidor, que contendrá los datos actualizados
+            console.log(data, "ACTUALIZADA")
+    
+          })
+          .then(() => actuProductosPedidos(producto, newStock)) 
+          .catch((error) => {
+            // Manejar errores
+            console.log(error, "rror")
+          }); */ /* Cada vez que se actualiza, se hace una llamada al servidor y actualiza el json que actua como base de datos, hay un error que al hacer solicitudes rapido se rompe todo. */
   }
+
+
+
 
 
   return (

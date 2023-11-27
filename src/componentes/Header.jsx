@@ -3,7 +3,7 @@
 export function Header({ restartLocal, crearStringParaEnviar }) {
     return (
         <>
-            <div className='header-buttons'>
+            <div className='header-buttons navbar-problem' >
                 <div id='buttons'>
                     <button className='interactive-button' onClick={restartLocal}>REINICIAR</button>
                     <button className='interactive-button' onClick={crearStringParaEnviar}>Crear mensaje</button>
