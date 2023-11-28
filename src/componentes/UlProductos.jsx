@@ -60,7 +60,7 @@ export function UlProductos() {
     return (
         <>
             <div id='menu-links-internos'>
-                <Link to="/inicio">Menu</Link>
+                <Link to="/">Menu</Link>
                 <Link to="/carrito">Carrito</Link>
             </div>
 
