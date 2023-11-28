@@ -77,7 +77,7 @@ function App() {
         />
 
         <Route
-          path='/inicio'
+          path='/'
           element={
             <Menu/>
           }
@@ -85,7 +85,7 @@ function App() {
         />
 
         <Route
-          path='carrito'
+          path='/carrito'
           element={
             <Carrito
             productosInstancia={productosInstancia}

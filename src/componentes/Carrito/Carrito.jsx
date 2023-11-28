@@ -7,7 +7,7 @@ export default function Carrito({ productosInstancia }) {
     return (
         <div id='Carrito'>
             <div id="carrito-links-internos">
-                <Link to="/inicio">Menu</Link>
+                <Link to="/">Menu</Link>
                 <Link to="/products">Productos</Link>
             </div>
 
