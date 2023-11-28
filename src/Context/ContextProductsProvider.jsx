@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // MyContextProvider.js
-import {  useEffect, useState } from 'react';
+import {  useState } from 'react';
 import ContextProducts from './ContextProducts';
 import productosJSON from '../assets/productos.json'
 
@@ -48,6 +48,7 @@ export const MyContextProvider = ({ children }) => {
     function actuProductosPedidos(productoItem, booleanStock) {
         let newProducts = []
         if (booleanStock) {/* Si es true hay que sacarlo */
+            productoItem.stock = true /* se actualiza el producto en cuestion */
             console.log(productosInstancia)
             newProducts = productosInstancia.filter(objeto => objeto.id !== productoItem.id);
 
@@ -73,16 +74,44 @@ export const MyContextProvider = ({ children }) => {
             setResetInduvidualLoading(true)
 
             try {
-                await reloadProductos();
+                await reloadProductos()
+                await resetearStocks()
             } catch (error) {
                 console.error('Error:', error);
             }
             setLoadingIntial(false)
             setResetInduvidualLoading(false)
-
         })()
 
         setProductonInstancia([])
+    }
+
+    function resetearStocks(){
+        almacen.map(product =>{
+            if(!product.stock){
+                product.stock = true
+            }
+        })
+        verduleria.map(product =>{
+            if(!product.stock){
+                product.stock = true
+            }
+        })
+        farmacia.map(product =>{
+            if(!product.stock){
+                product.stock = true
+            }
+        })
+        condimentos.map(product =>{
+            if(!product.stock){
+                product.stock = true
+            }
+        })
+        otros.map(product =>{
+            if(!product.stock){
+                product.stock = true
+            }
+        })
     }
 
 

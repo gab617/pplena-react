@@ -1,19 +1,17 @@
 /* eslint-disable react/prop-types */
 
-import { useContext, useEffect, useState } from "react"
-import ContextProducts from "../Context/ContextProducts"
+import { useState } from "react"
 
 function ProductoLi({ producto, actuProductosPedidos }) {
   const [stock, setStock] = useState(producto.stock)
-  const { resetIndividualLoading , restartLocal, reloadProductos} = useContext(ContextProducts)
 
 
 
   function agregarOeliminar(producto) {
     console.log('solicitar', stock)
     const newStock = !stock
-    setStock(newStock)
     actuProductosPedidos(producto, newStock)
+    setStock(newStock)
 
     /*     fetch(`http://localhost:3000/updateProduct/${producto.id}`, {
           method: 'PUT',

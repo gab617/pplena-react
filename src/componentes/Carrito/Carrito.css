@@ -2,11 +2,17 @@
     background-color: #f8f8f8;
     border: 1px solid #ddd;
     padding: 10px;
-    width: 200px;
-    margin: 20px;
-    border-radius: 5px;
+    width: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+#carrito-links-internos{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
 
 #Carrito a {
     text-decoration: none;
@@ -14,6 +20,13 @@
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+#Carrito p{
+    font-size: 1.3em;
 }
 
 #Carrito ul {
@@ -22,8 +35,21 @@
 }
 
 #Carrito li {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+
+#Carrito li .img-container{
+    border-radius: .4em;
+    margin-top: .2em;
+    width: 30%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);;
+}
+
+#Carrito li img{
+    width: 100%;
+
 }
 
 #Carrito li:last-child {

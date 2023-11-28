@@ -1,6 +1,6 @@
 .productos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   /* Ajusta el ancho mínimo y distribuye en columnas iguales */
   gap: 20px;
   /* Espacio entre los elementos */
@@ -215,6 +215,7 @@
   }
 
   #Almacen-ul {
+    margin-top: 2em;
     background: rgb(126, 118, 218);
     background: linear-gradient(52deg, rgba(236, 235, 132, 1) 0%, rgba(35, 152, 208, 1) 100%);
   }

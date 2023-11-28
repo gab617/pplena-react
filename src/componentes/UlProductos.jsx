@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
 import ProductoLi from './ProductoLi'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import ContextProducts from '../Context/ContextProducts'
+import './UlProductos.css'
 
 export function UlProductos() {
     const { productosInstancia,
@@ -49,7 +50,7 @@ export function UlProductos() {
         if (encontradoEnArray5) return condimentos;
     };
 
-    if (productosInstancia.length !== 0){
+    if (productosInstancia.length !== 0) {
         encontrarYActualizar(productosInstancia)
     }
 
@@ -58,7 +59,11 @@ export function UlProductos() {
 
     return (
         <>
-            <Link to="/inicio">Home</Link>
+            <div id='menu-links-internos'>
+                <Link to="/inicio">Menu</Link>
+                <Link to="/carrito">Carrito</Link>
+            </div>
+
 
             <ul id='Almacen-ul' className='productos-container'>
                 {
