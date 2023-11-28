@@ -1,0 +1,24 @@
+#menu-links-internos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.418);
+}
+
+#menu-links-internos a {
+    margin: 0 0 0 1em;
+    padding: .3em;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #000000;
+    /* Añade un borde blanco */
+    border-radius: 5px;
+    /* Añade esquinas redondeadas */
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.6194852941176471) 0%, rgba(9,9,121,0.6755077030812324) 40%, rgba(0,212,255,0.26934523809523814) 100%);}

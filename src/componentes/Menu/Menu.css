@@ -1,0 +1,47 @@
+#Menu {
+    width: auto;
+    height: 100vh;
+
+    background: rgb(58, 161, 180);
+    background: linear-gradient(90deg, rgba(58, 161, 180, 0.804359243697479) 0%, rgba(71, 133, 120, 0.711922268907563) 48%, rgba(252, 176, 69, 0.6250875350140056) 100%);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#Menu nav {
+    height: 100%;
+}
+
+#Menu nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#Menu nav li {
+    margin: 2em;
+}
+
+#Menu nav a {
+    text-decoration: none;
+    background: rgb(58,161,180);
+    background: linear-gradient(90deg, rgba(58,161,180,0.804359243697479) 0%, rgba(149,167,162,0.711922268907563) 20%, rgba(252,176,69,0.6250875350140056) 100%); color: #000000;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: 2px solid #fff;
+    /* Añade un borde blanco */
+    padding: 1em 4em;
+    /* Añade relleno alrededor del texto */
+    border-radius: 5px;
+    /* Añade esquinas redondeadas */
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Menu nav a:hover {
+    color: #ffd700;
+}
