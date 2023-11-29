@@ -62,7 +62,7 @@ function App() {
       <Routes>
 
         <Route
-          path="/products"
+          path="/"
           element={
             <>
               <UlProductos
@@ -76,13 +76,13 @@ function App() {
 
         />
 
-        <Route
+{/*         <Route
           path='/'
           element={
             <Menu/>
           }
 
-        />
+        /> */}
 
         <Route
           path='/carrito'

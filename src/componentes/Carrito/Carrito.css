@@ -29,6 +29,10 @@
     font-size: 1.3em;
 }
 
+#btn-volver{
+    text-align: center;
+}
+
 #Carrito ul {
     list-style-type: none;
     padding: 0;

@@ -4,733 +4,855 @@
             "id": 1,
             "nombre": "Galletas Pepas",
             "stock": true,
-            "imagen": "/imagenes/galletas_pepas.jfif"
+            "imagen": "/imagenes/galletas_pepas.jfif",
+            "cantidad":1
         },
         {
             "id": 2,
             "nombre": "Galletas Vanina",
             "stock": true,
-            "imagen": "/imagenes/galletas_vaninas.jfif"
+            "imagen": "/imagenes/galletas_vaninas.jfif",
+            "cantidad":1
         },
         {
             "id": 3,
             "nombre": "Galletas Surtidas",
             "stock": true,
-            "imagen": "/imagenes/galletas_surtidas.jfif"
+            "imagen": "/imagenes/galletas_surtidas.jfif",
+            "cantidad":1
         },
         {
             "id": 4,
             "nombre": "Galletas Oreo",
             "stock": true,
-            "imagen": "/imagenes/galletas_oreo.jfif"
+            "imagen": "/imagenes/galletas_oreo.jfif",
+            "cantidad":1
         },
         {
             "id": 5,
             "nombre": "Galletas Pitusas",
             "stock": true,
-            "imagen": "/imagenes/galletas_pitusas.jfif"
+            "imagen": "/imagenes/galletas_pitusas.jfif",
+            "cantidad":1
         },
         {
             "id": 7,
             "nombre": "Cerveza",
             "stock": true,
-            "imagen": "/imagenes/cerveza.jfif"
+            "imagen": "/imagenes/cerveza.jfif",
+            "cantidad":1
         },
         {
             "id": 8,
             "nombre": "Gaseosa",
             "stock": true,
-            "imagen": "/imagenes/gaseosa.jfif"
+            "imagen": "/imagenes/gaseosa.jfif",
+            "cantidad":1
         },
         {
             "id": 9,
             "nombre": "Gancia",
             "stock": true,
-            "imagen": "/imagenes/gancia.jfif"
+            "imagen": "/imagenes/gancia.jfif",
+            "cantidad":1
         },
         {
             "id": 10,
             "nombre": "Dr Lemon",
             "stock": true,
-            "imagen": "/imagenes/drlemon.png"
+            "imagen": "/imagenes/drlemon.png",
+            "cantidad":1
         },
         {
             "id": 11,
             "nombre": "Termidor",
             "stock": true,
-            "imagen": "/imagenes/termidor.jfif"
+            "imagen": "/imagenes/termidor.jfif",
+            "cantidad":1
         },
         {
             "id": 12,
             "nombre": "Petacas",
             "stock": true,
-            "imagen": "/imagenes/petacas.jfif"
+            "imagen": "/imagenes/petacas.jfif",
+            "cantidad":1
         },
         {
             "id": 13,
             "nombre": "Baggio Grande",
             "stock": true,
-            "imagen": "/imagenes/baggio_grande.jfif"
+            "imagen": "/imagenes/baggio_grande.jfif",
+            "cantidad":1
         },
         {
             "id": 14,
             "nombre": "Baggio Chico",
             "stock": true,
-            "imagen": "/imagenes/baggio_chico.jfif"
+            "imagen": "/imagenes/baggio_chico.jfif",
+            "cantidad":1
         },
         {
             "id": 15,
             "nombre": "Repuesto de Sedal",
             "stock": true,
-            "imagen": "/imagenes/respuesto_sedal.jfif"
+            "imagen": "/imagenes/respuesto_sedal.jfif",
+            "cantidad":1
         },
         {
             "id": 16,
             "nombre": "Repuesto de Shampoo 2da marca",
             "stock": true,
-            "imagen": "/imagenes/respuesto_shampoo.jfif"
+            "imagen": "/imagenes/respuesto_shampoo.jfif",
+            "cantidad":1
         },
         {
             "id": 17,
             "nombre": "Repuesto de Acondicionador",
             "stock": true,
-            "imagen": "/imagenes/respuesto_acondicionador.jfif"
+            "imagen": "/imagenes/respuesto_acondicionador.jfif",
+            "cantidad":1
         },
         {
             "id": 18,
             "nombre": "Toallitas Calipso",
             "stock": true,
-            "imagen": "/imagenes/toallitas_calipso.jfif"
+            "imagen": "/imagenes/toallitas_calipso.jfif",
+            "cantidad":1
         },
         {
             "id": 19,
             "nombre": "Protectores Calipso",
             "stock": true,
-            "imagen": "/imagenes/protectores_calipso.jfif"
+            "imagen": "/imagenes/protectores_calipso.jfif",
+            "cantidad":1
         },
         {
             "id": 20,
             "nombre": "Algodon",
             "stock": true,
-            "imagen": "/imagenes/algodon.jfif"
+            "imagen": "/imagenes/algodon.jfif",
+            "cantidad":1
         },
         {
             "id": 21,
             "nombre": "Jabon Seiseme",
             "stock": true,
-            "imagen": "/imagenes/jabon_seiseme.jfif"
+            "imagen": "/imagenes/jabon_seiseme.jfif",
+            "cantidad":1
         },
         {
             "id": 22,
             "nombre": "Jabon Rexona",
             "stock": true,
-            "imagen": "/imagenes/jabon_rexona.jfif"
+            "imagen": "/imagenes/jabon_rexona.jfif",
+            "cantidad":1
         },
         {
             "id": 23,
             "nombre": "Jabon Dove",
             "stock": true,
-            "imagen": "/imagenes/jabon_dove.jfif"
+            "imagen": "/imagenes/jabon_dove.jfif",
+            "cantidad":1
         },
         {
             "id": 24,
             "nombre": "Esponjas",
             "stock": true,
-            "imagen": "/imagenes/esponjas.jfif"
+            "imagen": "/imagenes/esponjas.jfif",
+            "cantidad":1
         },
         {
             "id": 25,
             "nombre": "Virulanas",
             "stock": true,
-            "imagen": "/imagenes/virulanas.jfif"
+            "imagen": "/imagenes/virulanas.jfif",
+            "cantidad":1
         },
         {
             "id": 26,
             "nombre": "Dentrifico Colgate",
             "stock": true,
-            "imagen": "/imagenes/dentrifico_colgate.jfif"
+            "imagen": "/imagenes/dentrifico_colgate.jfif",
+            "cantidad":1
         },
         {
             "id": 27,
             "nombre": "Jabon en Polvo",
             "stock": true,
-            "imagen": "/imagenes/jabonenpolvo.jfif"
+            "imagen": "/imagenes/jabonenpolvo.jfif",
+            "cantidad":1
         },
         {
             "id": 28,
             "nombre": "Jabon en Polvo Zorro",
             "stock": true,
-            "imagen": "/imagenes/jabonenpolvo_zorro.jfif"
+            "imagen": "/imagenes/jabonenpolvo_zorro.jfif",
+            "cantidad":1
         },
         {
             "id": 29,
             "nombre": "Jabon Liquido (Skip)",
             "stock": true,
-            "imagen": "/imagenes/jabonliquido_skip.jfif"
+            "imagen": "/imagenes/jabonliquido_skip.jfif",
+            "cantidad":1
         },
         {
             "id": 30,
             "nombre": "Limpiador de Piso (Heroe)",
             "stock": true,
-            "imagen": "/imagenes/limpiadordepiso_heroe.jfif"
+            "imagen": "/imagenes/limpiadordepiso_heroe.jfif",
+            "cantidad":1
         },
         {
             "id": 31,
             "nombre": "Gillette Azul",
             "stock": true,
-            "imagen": "/imagenes/gillete_azul.jfif"
+            "imagen": "/imagenes/gillete_azul.jfif",
+            "cantidad":1
         },
         {
             "id": 32,
             "nombre": "Afeitadora Minora",
             "stock": true,
-            "imagen": "/imagenes/afeitadora_minora.jfif"
+            "imagen": "/imagenes/afeitadora_minora.jfif",
+            "cantidad":1
         },
         {
             "id": 33,
             "nombre": "Salsa Lista Pure",
             "stock": true,
-            "imagen": "/imagenes/salsa_pure.jfif"
+            "imagen": "/imagenes/salsa_pure.jfif",
+            "cantidad":1
         },
         {
             "id": 34,
             "nombre": "Aceitunas",
             "stock": true,
-            "imagen": "/imagenes/aceituna.jfif"
+            "imagen": "/imagenes/aceituna.jfif",
+            "cantidad":1
         },
         {
             "id": 35,
             "nombre": "Cepillos de Dientes (Colgate)",
             "stock": true,
-            "imagen": "/imagenes/cepillos_colgate.jfif"
+            "imagen": "/imagenes/cepillos_colgate.jfif",
+            "cantidad":1
         },
         {
             "id": 36,
             "nombre": "Calditos de Verduras",
             "stock": true,
-            "imagen": "/imagenes/calditos_verdura.jfif"
+            "imagen": "/imagenes/calditos_verdura.jfif",
+            "cantidad":1
         },
         {
             "id": 37,
             "nombre": "Coca-Cola",
             "stock": true,
-            "imagen": "/imagenes/coca_cola.jfif"
+            "imagen": "/imagenes/coca_cola.jfif",
+            "cantidad":1
         },
         {
             "id": 38,
             "nombre": "Manaos",
             "stock": true,
-            "imagen": "/imagenes/manaos.jfif"
+            "imagen": "/imagenes/manaos.jfif",
+            "cantidad":1
         },
         {
             "id": 39,
             "nombre": "Brahma Lata",
             "stock": true,
-            "imagen": "/imagenes/brahma_lata.jfif"
+            "imagen": "/imagenes/brahma_lata.jfif",
+            "cantidad":1
         },
         {
             "id": 40,
             "nombre": "Grisines",
             "stock": true,
-            "imagen": "/imagenes/grisines.jfif"
+            "imagen": "/imagenes/grisines.jfif",
+            "cantidad":1
         },
         {
             "id": 41,
             "nombre": "Don Satur Agridulce",
             "stock": true,
-            "imagen": "/imagenes/donsatur_agridulce.jfif"
+            "imagen": "/imagenes/donsatur_agridulce.jfif",
+            "cantidad":1
         },
         {
             "id": 42,
             "nombre": "Don Satur Salada",
             "stock": true,
-            "imagen": "/imagenes/donsatur_salada.jfif"
+            "imagen": "/imagenes/donsatur_salada.jfif",
+            "cantidad":1
         },
         {
             "id": 43,
             "nombre": "Surtidas Bagley",
             "stock": true,
-            "imagen": "/imagenes/surtidas_bagley.jfif"
+            "imagen": "/imagenes/surtidas_bagley.jfif",
+            "cantidad":1
         },
         {
             "id": 44,
             "nombre": "Surtidas Diversion",
             "stock": true,
-            "imagen": "/imagenes/surtidas_diversion.jfif"
+            "imagen": "/imagenes/surtidas_diversion.jfif",
+            "cantidad":1
         },
         {
             "id": 45,
             "nombre": "Mayonesa Natura Grande",
             "stock": true,
-            "imagen": "/imagenes/mayonesanatura_grande.jfif"
+            "imagen": "/imagenes/mayonesanatura_grande.jfif",
+            "cantidad":1
         },
         {
             "id": 46,
             "nombre": "Mayonesa Natura Chica",
             "stock": true,
-            "imagen": "/imagenes/mayonesanatura_chica.jfif"
+            "imagen": "/imagenes/mayonesanatura_chica.jfif",
+            "cantidad":1
         },
         {
             "id": 47,
             "nombre": "Huevos",
             "stock": true,
-            "imagen": "/imagenes/huevos.jfif"
+            "imagen": "/imagenes/huevos.jfif",
+            "cantidad":1
         },
         {
             "id": 48,
             "nombre": "Papel Higiénico Higienol",
             "stock": true,
-            "imagen": "/imagenes/papelhigienico_higienol.jfif"
+            "imagen": "/imagenes/papelhigienico_higienol.jfif",
+            "cantidad":1
         },
         {
             "id": 49,
             "nombre": "Papel Higiénico Económico",
             "stock": true,
-            "imagen": "/imagenes/papelhigienico_economico.jfif"
+            "imagen": "/imagenes/papelhigienico_economico.jfif",
+            "cantidad":1
         },
         {
             "id": 50,
             "nombre": "Servilletas Susex",
             "stock": true,
-            "imagen": "/imagenes/servilletas_susex.jfif"
+            "imagen": "/imagenes/servilletas_susex.jfif",
+            "cantidad":1
         },
         {
             "id": 51,
             "nombre": "Servilletas Económicas",
             "stock": true,
-            "imagen": "/imagenes/servilletas_economicas.jfif"
+            "imagen": "/imagenes/servilletas_economicas.jfif",
+            "cantidad":1
         },
         {
             "id": 52,
             "nombre": "Yerba Playadito 1/2",
             "stock": true,
-            "imagen": "/imagenes/yerba_playadito1 2.jfif"
+            "imagen": "/imagenes/yerba_playadito1 2.jfif",
+            "cantidad":1
         },
         {
             "id": 53,
             "nombre": "Yerba Playadito 1k",
             "stock": true,
-            "imagen": "/imagenes/yerba_playadito1k.jfif"
+            "imagen": "/imagenes/yerba_playadito1k.jfif",
+            "cantidad":1
         },
         {
             "id": 54,
             "nombre": "Leche",
             "stock": true,
-            "imagen": "/imagenes/leche.jfif"
+            "imagen": "/imagenes/leche.jfif",
+            "cantidad":1
         },
         {
             "id": 55,
             "nombre": "Leche Económica",
             "stock": true,
-            "imagen": "/imagenes/leche_economica.png"
+            "imagen": "/imagenes/leche_economica.png",
+            "cantidad":1
         },
         {
             "id": 56,
             "nombre": "Mediatarde",
             "stock": true,
-            "imagen": "/imagenes/galletas_mediatarde.jfif"
+            "imagen": "/imagenes/galletas_mediatarde.jfif",
+            "cantidad":1
         },
         {
             "id": 57,
             "nombre": "Maizena",
             "stock": true,
-            "imagen": "/imagenes/maizena.jfif"
+            "imagen": "/imagenes/maizena.jfif",
+            "cantidad":1
         },
         {
             "id": 58,
             "nombre": "Arroz",
             "stock": true,
-            "imagen": "/imagenes/arroz.jfif"
+            "imagen": "/imagenes/arroz.jfif",
+            "cantidad":1
         },
         {
             "id": 59,
             "nombre": "Azucar Ledesma",
             "stock": true,
-            "imagen": "/imagenes/azucar_ledesma.jfif"
+            "imagen": "/imagenes/azucar_ledesma.jfif",
+            "cantidad":1
         },
         {
             "id": 60,
             "nombre": "Azucar Económico",
             "stock": true,
-            "imagen": "/imagenes/azucar_economico.jfif"
+            "imagen": "/imagenes/azucar_economico.jfif",
+            "cantidad":1
         },
         {
             "id": 61,
             "nombre": "Queso Rallado Sancor",
             "stock": true,
-            "imagen": "/imagenes/quesorallado_sancor.jfif"
+            "imagen": "/imagenes/quesorallado_sancor.jfif",
+            "cantidad":1
         },
         {
             "id": 62,
             "nombre": "Neskuit",
             "stock": true,
-            "imagen": "/imagenes/nesquik.jfif"
+            "imagen": "/imagenes/nesquik.jfif",
+            "cantidad":1
         },
         {
             "id": 63,
             "nombre": "Sal Fina",
             "stock": true,
-            "imagen": "/imagenes/sal_fina.jfif"
+            "imagen": "/imagenes/sal_fina.jfif",
+            "cantidad":1
         },
         {
             "id": 64,
             "nombre": "Sal Gruesa",
             "stock": true,
-            "imagen": "/imagenes/sal_gruesa.jfif"
+            "imagen": "/imagenes/sal_gruesa.jfif",
+            "cantidad":1
         },
         {
             "id": 65,
             "nombre": "Pate",
             "stock": true,
-            "imagen": "/imagenes/pate.jfif"
+            "imagen": "/imagenes/pate.jfif",
+            "cantidad":1
         },
         {
             "id": 66,
             "nombre": "Picadillo",
             "stock": true,
-            "imagen": "/imagenes/picadillo.jfif"
+            "imagen": "/imagenes/picadillo.jfif",
+            "cantidad":1
         },
         {
             "id": 67,
             "nombre": "Taragui Chico",
             "stock": true,
-            "imagen": "/imagenes/taragui_chico.jfif"
+            "imagen": "/imagenes/taragui_chico.jfif",
+            "cantidad":1
         },
         {
             "id": 68,
             "nombre": "Taragui Grande",
             "stock": true,
-            "imagen": "/imagenes/taragui_grande.jfif"
+            "imagen": "/imagenes/taragui_grande.jfif",
+            "cantidad":1
         },
         {
             "id": 69,
             "nombre": "Mate Cocido",
             "stock": true,
-            "imagen": "/imagenes/mate_cocido.jfif"
+            "imagen": "/imagenes/mate_cocido.jfif",
+            "cantidad":1
         },
         {
             "id": 70,
             "nombre": "Aceite",
             "stock": true,
-            "imagen": "/imagenes/aceite.jfif"
+            "imagen": "/imagenes/aceite.jfif",
+            "cantidad":1
         },
         {
             "id": 71,
             "nombre": "Tang",
             "stock": true,
-            "imagen": "/imagenes/tang.jfif"
+            "imagen": "/imagenes/tang.jfif",
+            "cantidad":1
         },
         {
             "id": 72,
             "nombre": "Clight",
             "stock": true,
-            "imagen": "/imagenes/clight.jfif"
+            "imagen": "/imagenes/clight.jfif",
+            "cantidad":1
         },
         {
             "id": 73,
             "nombre": "Vinagre de Alcohol",
             "stock": true,
-            "imagen": "/imagenes/vinagre_dealcohol.jfif"
+            "imagen": "/imagenes/vinagre_dealcohol.jfif",
+            "cantidad":1
         },
         {
             "id": 74,
             "nombre": "Harina Pureza",
             "stock": true,
-            "imagen": "/imagenes/harina_pureza.jfif"
+            "imagen": "/imagenes/harina_pureza.jfif",
+            "cantidad":1
         },
         {
             "id": 75,
             "nombre": "Harina p/ Pizza",
             "stock": true,
-            "imagen": "/imagenes/harina_pizza.jfif"
+            "imagen": "/imagenes/harina_pizza.jfif",
+            "cantidad":1
         },
         {
             "id": 76,
             "nombre": "Harina Comun",
             "stock": true,
-            "imagen": "/imagenes/harina_comun.jfif"
+            "imagen": "/imagenes/harina_comun.jfif",
+            "cantidad":1
         },
         {
             "id": 77,
             "nombre": "Harina Blanca Flor",
             "stock": true,
-            "imagen": "/imagenes/harina_blancaflor.jfif"
+            "imagen": "/imagenes/harina_blancaflor.jfif",
+            "cantidad":1
         },
         {
             "id": 78,
             "nombre": "Grasa",
             "stock": true,
-            "imagen": "/imagenes/grasa.jfif"
+            "imagen": "/imagenes/grasa.jfif",
+            "cantidad":1
         },
         {
             "id": 79,
             "nombre": "Detergente Magistral",
             "stock": true,
-            "imagen": "/imagenes/detergente_magistral.jfif"
+            "imagen": "/imagenes/detergente_magistral.jfif",
+            "cantidad":1
         },
         {
             "id": 80,
             "nombre": "Detergente Heroe",
             "stock": true,
-            "imagen": "/imagenes/detergente_heroe.jfif"
+            "imagen": "/imagenes/detergente_heroe.jfif",
+            "cantidad":1
         },
         {
             "id": 81,
             "nombre": "Lavandina",
             "stock": true,
-            "imagen": "/imagenes/lavandina.jfif"
+            "imagen": "/imagenes/lavandina.jfif",
+            "cantidad":1
         },
         {
             "id": 82,
             "nombre": "Fideos Tallarin",
             "stock": true,
-            "imagen": "/imagenes/fideos_tallarin.jfif"
+            "imagen": "/imagenes/fideos_tallarin.jfif",
+            "cantidad":1
         },
         {
             "id": 83,
             "nombre": "Fideos Moñito",
             "stock": true,
-            "imagen": "/imagenes/fideos_moñito.jfif"
+            "imagen": "/imagenes/fideos_moñito.jfif",
+            "cantidad":1
         },
         {
             "id": 84,
             "nombre": "Fideos Tirabuzon",
             "stock": true,
-            "imagen": "/imagenes/fideos_tirabuzon.jfif"
+            "imagen": "/imagenes/fideos_tirabuzon.jfif",
+            "cantidad":1
         },
         {
             "id": 85,
             "nombre": "Comida para Perro",
             "stock": true,
-            "imagen": "/imagenes/comidaparaperro.jfif"
+            "imagen": "/imagenes/comidaparaperro.jfif",
+            "cantidad":1
         },
         {
             "id": 86,
             "nombre": "Papitas",
             "stock": true,
-            "imagen": "/imagenes/papitas.jfif"
+            "imagen": "/imagenes/papitas.jfif",
+            "cantidad":1
         },
         {
             "id": 87,
             "nombre": "Baggio Fresh",
             "stock": true,
-            "imagen": "/imagenes/baggio_fresh.jfif"
+            "imagen": "/imagenes/baggio_fresh.jfif",
+            "cantidad":1
         },
         {
             "id": 88,
             "nombre": "Alfajores Gualmayen",
             "stock": true,
-            "imagen": "/imagenes/alfajor_gualmayen.jfif"
+            "imagen": "/imagenes/alfajor_gualmayen.jfif",
+            "cantidad":1
         },
         {
             "id": 89,
             "nombre": "Seven Up",
             "stock": true,
-            "imagen": "/imagenes/sevenup.jfif"
+            "imagen": "/imagenes/sevenup.jfif",
+            "cantidad":1
         },
         {
             "id": 90,
             "nombre": "Gelatina",
             "stock": true,
-            "imagen": "/imagenes/gelatina.jfif"
+            "imagen": "/imagenes/gelatina.jfif",
+            "cantidad":1
         },
         {
             "id": 91,
             "nombre": "Desodorante Axe",
             "stock": true,
-            "imagen": "/imagenes/desodorante_axe.jfif"
+            "imagen": "/imagenes/desodorante_axe.jfif",
+            "cantidad":1
         },
         {
             "id": 92,
             "nombre": "Cigarrillos Master",
             "stock": true,
-            "imagen": "/imagenes/cigarrillos_master.jfif"
+            "imagen": "/imagenes/cigarrillos_master.jfif",
+            "cantidad":1
         },
         {
             "id": 93,
             "nombre": "Cigarrillos Redpoint",
             "stock": true,
-            "imagen": "/imagenes/cigarrillos_redpoint.jfif"
+            "imagen": "/imagenes/cigarrillos_redpoint.jfif",
+            "cantidad":1
         },
         {
             "id": 95,
             "nombre": "Desodorante Rexona",
             "stock": true,
-            "imagen": "/imagenes/desodorante_rexona.jfif"
+            "imagen": "/imagenes/desodorante_rexona.jfif",
+            "cantidad":1
         },
         {
             "id": 96,
             "nombre": "Desodorante Dove",
             "stock": true,
-            "imagen": "/imagenes/desodorante_dove.jfif"
+            "imagen": "/imagenes/desodorante_dove.jfif",
+            "cantidad":1
         },
         {
             "id": 97,
             "nombre": "Curitas",
             "stock": true,
-            "imagen": "/imagenes/curitas.jfif"
+            "imagen": "/imagenes/curitas.jfif",
+            "cantidad":1
         },
         {
             "id": 98,
             "nombre": "Encendedor",
             "stock": true,
-            "imagen": "/imagenes/encendedor.jfif"
+            "imagen": "/imagenes/encendedor.jfif",
+            "cantidad":1
         },
         {
             "id": 99,
             "nombre": "Fosforos",
             "stock": true,
-            "imagen": "/imagenes/fosforos.jfif"
+            "imagen": "/imagenes/fosforos.jfif",
+            "cantidad":1
         },
         {
             "id": 100,
             "nombre": "Repelente",
             "stock": true,
-            "imagen": "/imagenes/repelente.jfif"
+            "imagen": "/imagenes/repelente.jfif",
+            "cantidad":1
         },
         {
             "id": 101,
             "nombre": "Aerosol Fuyi",
             "stock": true,
-            "imagen": "/imagenes/aerosol-fuyi.jfif"
+            "imagen": "/imagenes/aerosol-fuyi.jfif",
+            "cantidad":1
         },
         {
             "id": 102,
             "nombre": "Yerba Mañanita",
             "stock": true,
-            "imagen": "/imagenes/yerba_mañanita.jfif"
+            "imagen": "/imagenes/yerba_mañanita.jfif",
+            "cantidad":1
         },
         {
             "id": 103,
             "nombre": "Yerba CBSE",
             "stock": true,
-            "imagen": "/imagenes/yerba_cbse.jfif"
+            "imagen": "/imagenes/yerba_cbse.jfif",
+            "cantidad":1
         },
         {
             "id": 104,
             "nombre": "Lata Choclo",
             "stock": true,
-            "imagen": "/imagenes/lata_choclo.jfif"
+            "imagen": "/imagenes/lata_choclo.jfif",
+            "cantidad":1
         },
         {
             "id": 105,
             "nombre": "Lata Garbanzo",
             "stock": true,
-            "imagen": "/imagenes/lata_garbanzo.jfif"
+            "imagen": "/imagenes/lata_garbanzo.jfif",
+            "cantidad":1
         },
         {
             "id": 152,
             "nombre": "Lamparas",
             "stock": true,
-            "imagen": "/imagenes/lamparas.jfif"
+            "imagen": "/imagenes/lamparas.jfif",
+            "cantidad":1
         },
         {
             "id": 153,
             "nombre": "Ketchup Chiquito",
             "stock": true,
-            "imagen": "/imagenes/ketchup_chiquito.jfif"
+            "imagen": "/imagenes/ketchup_chiquito.jfif",
+            "cantidad":1
         },
         {
             "id": 154,
             "nombre": "Mostaza Chico",
             "stock": true,
-            "imagen": "/imagenes/mostaza_chico.jfif"
+            "imagen": "/imagenes/mostaza_chico.jfif",
+            "cantidad":1
         },
         {
             "id": 155,
             "nombre": "Polvo para Hornear",
             "stock": true,
-            "imagen": "/imagenes/polvo_hornear.jfif"
+            "imagen": "/imagenes/polvo_hornear.jfif",
+            "cantidad":1
         },
         {
             "id": 156,
             "nombre": "Polvo para Tortas",
             "stock": true,
-            "imagen": "/imagenes/polvo_tortas.jfif"
+            "imagen": "/imagenes/polvo_tortas.jfif",
+            "cantidad":1
         },
         {
             "id": 157,
             "nombre": "Lata Arvejas",
             "stock": true,
-            "imagen": "/imagenes/lata_arvejas.jfif"
+            "imagen": "/imagenes/lata_arvejas.jfif",
+            "cantidad":1
         },
         {
             "id": 158,
             "nombre": "Avena",
             "stock": true,
-            "imagen": "/imagenes/avena.jfif"
+            "imagen": "/imagenes/avena.jfif",
+            "cantidad":1
         },
         {
             "id": 159,
             "nombre": "Agua",
             "stock": true,
-            "imagen": "/imagenes/agua.jfif"
+            "imagen": "/imagenes/agua.jfif",
+            "cantidad":1
         },
         {
             "id": 160,
             "nombre": "Carbon",
             "stock": true,
-            "imagen": "/imagenes/carbon.jfif"
+            "imagen": "/imagenes/carbon.jfif",
+            "cantidad":1
         },
         {
             "id": 163,
             "nombre": "Dulce de Leche",
             "stock": true,
-            "imagen": "/imagenes/dulce_leche.jfif"
+            "imagen": "/imagenes/dulce_leche.jfif",
+            "cantidad":1
         },
         {
             "id": 164,
             "nombre": "Salchichas",
             "stock": true,
-            "imagen": "/imagenes/salchichas.jfif"
+            "imagen": "/imagenes/salchichas.jfif",
+            "cantidad":1
         },
         {
             "id": 165,
             "nombre": "Hamburguesas de 72",
             "stock": true,
-            "imagen": "/imagenes/hamburguesas_72.jfif"
+            "imagen": "/imagenes/hamburguesas_72.jfif",
+            "cantidad":1
         },
         {
             "id": 166,
             "nombre": "Hamburguesas Alto Rancho",
             "stock": true,
-            "imagen": "/imagenes/hamburguesas_alto_rancho.jfif"
+            "imagen": "/imagenes/hamburguesas_alto_rancho.jfif",
+            "cantidad":1
         },
         {
             "id": 168,
             "nombre": "Pilas",
             "stock": true,
-            "imagen": "/imagenes/pilas.jfif"
+            "imagen": "/imagenes/pilas.jfif",
+            "cantidad":1
         },
         {
             "id": 169,
             "nombre": "La Gotita",
             "stock": true,
-            "imagen": "/imagenes/la_gotita.jfif"
+            "imagen": "/imagenes/la_gotita.jfif",
+            "cantidad":1
         },
         {
             "id": 170,
             "nombre": "Chiclches Beldent",
             "stock": true,
-            "imagen": "/imagenes/chicles_beldent.jfif"
+            "imagen": "/imagenes/chicles_beldent.jfif",
+            "cantidad":1
         },
         {
             "id": 171,
             "nombre": "Levaduras",
             "stock": true,
-            "imagen": "/imagenes/levadura.jfif"
+            "imagen": "/imagenes/levadura.jfif",
+            "cantidad":1
         },
         {
             "id": 172,
             "nombre": "Shampoo Plusbell",
             "stock": true,
-            "imagen": "/imagenes/shampoo_plusbelle.jfif"
+            "imagen": "/imagenes/shampoo_plusbelle.jfif",
+            "cantidad":1
         },
         {
             "id": 117,
             "nombre": "Yogurt",
             "stock": true,
-            "imagen": "/imagenes/yogurt.jfif"
+            "imagen": "/imagenes/yogurt.jfif",
+            "cantidad":1
         }
     ],
     "verduleria": [
@@ -738,103 +860,120 @@
             "id": 106,
             "nombre": "Manzana",
             "stock": true,
-            "imagen": "/imagenes/manzana.jfif"
+            "imagen": "/imagenes/manzana.jfif",
+            "cantidad":1
         },
         {
             "id": 107,
             "nombre": "Mandarina",
             "stock": true,
-            "imagen": "/imagenes/mandarina.jfif"
+            "imagen": "/imagenes/mandarina.jfif",
+            "cantidad":1
         },
         {
             "id": 108,
             "nombre": "Banana",
             "stock": true,
-            "imagen": "/imagenes/banana.jfif"
+            "imagen": "/imagenes/banana.jfif",
+            "cantidad":1
         },
         {
             "id": 109,
             "nombre": "Naranja",
             "stock": true,
-            "imagen": "/imagenes/naranja.jfif"
+            "imagen": "/imagenes/naranja.jfif",
+            "cantidad":1
         },
         {
             "id": 110,
             "nombre": "Calabaza",
             "stock": true,
-            "imagen": "/imagenes/calabaza.jfif"
+            "imagen": "/imagenes/calabaza.jfif",
+            "cantidad":1
         },
         {
             "id": 111,
             "nombre": "Batata",
             "stock": true,
-            "imagen": "/imagenes/batata.jfif"
+            "imagen": "/imagenes/batata.jfif",
+            "cantidad":1
         },
         {
             "id": 112,
             "nombre": "Papa",
             "stock": true,
-            "imagen": "/imagenes/papa.jfif"
+            "imagen": "/imagenes/papa.jfif",
+            "cantidad":1
         },
         {
             "id": 113,
             "nombre": "Cebolla",
             "stock": true,
-            "imagen": "/imagenes/cebolla.jfif"
+            "imagen": "/imagenes/cebolla.jfif",
+            "cantidad":1
         },
         {
             "id": 114,
             "nombre": "Tomate",
             "stock": true,
-            "imagen": "/imagenes/tomate.jfif"
+            "imagen": "/imagenes/tomate.jfif",
+            "cantidad":1
         },
         {
             "id": 115,
             "nombre": "Zanahoria",
             "stock": true,
-            "imagen": "/imagenes/zanahoria.jfif"
+            "imagen": "/imagenes/zanahoria.jfif",
+            "cantidad":1
         },
         {
             "id": 116,
             "nombre": "Cebollita de Verdeo",
             "stock": true,
-            "imagen": "/imagenes/cebollita_deverdeo.jfif"
+            "imagen": "/imagenes/cebollita_deverdeo.jfif",
+            "cantidad":1
         },
         {
             "id": 118,
             "nombre": "Huevo",
             "stock": true,
-            "imagen": "/imagenes/huevo.jfif"
+            "imagen": "/imagenes/huevo.jfif",
+            "cantidad":1
         },
         {
             "id": 119,
             "nombre": "Morron",
             "stock": true,
-            "imagen": "/imagenes/morron.jfif"
+            "imagen": "/imagenes/morron.jfif",
+            "cantidad":1
         },
         {
             "id": 120,
             "nombre": "Lechuga",
             "stock": true,
-            "imagen": "/imagenes/lechuga.jfif"
+            "imagen": "/imagenes/lechuga.jfif",
+            "cantidad":1
         },
         {
             "id": 143,
             "nombre": "Jengibre",
             "stock": true,
-            "imagen": "/imagenes/jengibre.jfif"
+            "imagen": "/imagenes/jengibre.jfif",
+            "cantidad":1
         },
         {
             "id": 144,
             "nombre": "Ajo",
             "stock": true,
-            "imagen": "/imagenes/ajo.jfif"
+            "imagen": "/imagenes/ajo.jfif",
+            "cantidad":1
         },
         {
             "id": 145,
             "nombre": "Cilantro",
             "stock": true,
-            "imagen": "/imagenes/cilantro.jfif"
+            "imagen": "/imagenes/cilantro.jfif",
+            "cantidad":1
         }
     ],
     "otros": [
@@ -842,133 +981,155 @@
             "id": 121,
             "nombre": "Pipas",
             "stock": true,
-            "imagen": "/imagenes/pipas.jfif"
+            "imagen": "/imagenes/pipas.jfif",
+            "cantidad":1
         },
         {
             "id": 122,
             "nombre": "Chupetin Evolution",
             "stock": true,
-            "imagen": "/imagenes/chupetin_evolution.jfif"
+            "imagen": "/imagenes/chupetin_evolution.jfif",
+            "cantidad":1
         },
         {
             "id": 123,
             "nombre": "Chupetin Clasico",
             "stock": true,
-            "imagen": "/imagenes/chupetin.jfif"
+            "imagen": "/imagenes/chupetin.jfif",
+            "cantidad":1
         },
         {
             "id": 124,
             "nombre": "Lenguetazo",
             "stock": true,
-            "imagen": "/imagenes/lenguetazo.jfif"
+            "imagen": "/imagenes/lenguetazo.jfif",
+            "cantidad":1
         },
         {
             "id": 125,
             "nombre": "Chicles Fierita",
             "stock": true,
-            "imagen": "/imagenes/chicles_fierita.jfif"
+            "imagen": "/imagenes/chicles_fierita.jfif",
+            "cantidad":1
         },
         {
             "id": 126,
             "nombre": "Dos Corazones",
             "stock": true,
-            "imagen": "/imagenes/doscorazones.jfif"
+            "imagen": "/imagenes/doscorazones.jfif",
+            "cantidad":1
         },
         {
             "id": 127,
             "nombre": "Caramelos Acidos",
             "stock": true,
-            "imagen": "/imagenes/caramelos_acidos.jfif"
+            "imagen": "/imagenes/caramelos_acidos.jfif",
+            "cantidad":1
         },
         {
             "id": 128,
             "nombre": "Caramelos Alka",
             "stock": true,
-            "imagen": "/imagenes/caramelos_alka.jfif"
+            "imagen": "/imagenes/caramelos_alka.jfif",
+            "cantidad":1
         },
         {
             "id": 129,
             "nombre": "Sapitos",
             "stock": true,
-            "imagen": "/imagenes/sapitos.jfif"
+            "imagen": "/imagenes/sapitos.jfif",
+            "cantidad":1
         },
         {
             "id": 130,
             "nombre": "Lengua Loca",
             "stock": true,
-            "imagen": "/imagenes/lengualoca.jfif"
+            "imagen": "/imagenes/lengualoca.jfif",
+            "cantidad":1
         },
         {
             "id": 131,
             "nombre": "Caramelos Billiken",
             "stock": true,
-            "imagen": "/imagenes/caramelos_billiken.jfif"
+            "imagen": "/imagenes/caramelos_billiken.jfif",
+            "cantidad":1
         },
         {
             "id": 132,
             "nombre": "Alfajores Guallmallen Simple",
             "stock": true,
-            "imagen": "/imagenes/alfajores_guaymallensimple.jfif"
+            "imagen": "/imagenes/alfajores_guaymallensimple.jfif",
+            "cantidad":1
         },
         {
             "id": 133,
             "nombre": "Alfajores Gualmayen Triple",
             "stock": true,
-            "imagen": "/imagenes/alfajores_guaymallentriple.jfif"
+            "imagen": "/imagenes/alfajores_guaymallentriple.jfif",
+            "cantidad":1
         },
         {
             "id": 134,
             "nombre": "Fantoche Triple",
             "stock": true,
-            "imagen": "/imagenes/fantoche_triple.jfif"
+            "imagen": "/imagenes/fantoche_triple.jfif",
+            "cantidad":1
         },
         {
             "id": 135,
             "nombre": "Beldent",
             "stock": true,
-            "imagen": "/imagenes/beldent.jfif"
+            "imagen": "/imagenes/beldent.jfif",
+            "cantidad":1
         },
         {
             "id": 136,
             "nombre": "Caramelos Halls",
             "stock": true,
-            "imagen": "/imagenes/caramelos_halls.jfif"
+            "imagen": "/imagenes/caramelos_halls.jfif",
+            "cantidad":1
         },
         {
             "id": 137,
             "nombre": "Bolsas de Arranque",
             "stock": true,
-            "imagen": "/imagenes/bolsasdearranque.jfif"
+            "imagen": "/imagenes/bolsasdearranque.jfif",
+            "cantidad":1
         },
         {
             "id": 138,
             "nombre": "Bolsas Reforzadas",
             "stock": true,
-            "imagen": "/imagenes/bolsas_reforzadas.jfif"
+            "imagen": "/imagenes/bolsas_reforzadas.jfif",
+            "cantidad":1
         },
         {
             "id": 139,
             "nombre": "Caramelos de Miel",
             "stock": true,
-            "imagen": "/imagenes/caramelos_miel.jfif"
+            "imagen": "/imagenes/caramelos_miel.jfif",
+            "cantidad":1
         },
         {
             "id": 140,
             "nombre": "Chicles Bug",
             "stock": true,
-            "imagen": "/imagenes/chicles_bug.jfif"
+            "imagen": "/imagenes/chicles_bug.jfif",
+            "cantidad":1
         },
         {
             "id": 141,
             "nombre": "Gomitas",
             "stock": true,
-            "imagen": "/imagenes/gomitas.jfif"
+            "imagen": "/imagenes/gomitas.jfif",
+            "cantidad":1
         },
         {
             "id": 142,
             "nombre": "Caramelos D.R.F.",
             "stock": true,
-            "imagen": "/imagenes/caramelos_drf.jfif"
+            "imagen": "/imagenes/caramelos_drf.jfif",
+            "cantidad":1
         }
     ],
     "condimentos": [
@@ -976,31 +1137,36 @@
             "id": 147,
             "nombre": "Oregano",
             "stock": true,
-            "imagen": "/imagenes/oregano.jfif"
+            "imagen": "/imagenes/oregano.jfif",
+            "cantidad":1
         },
         {
             "id": 148,
             "nombre": "Pimenton",
             "stock": true,
-            "imagen": "/imagenes/pimenton.jfif"
+            "imagen": "/imagenes/pimenton.jfif",
+            "cantidad":1
         },
         {
             "id": 149,
             "nombre": "Condimentos para Pizza",
             "stock": true,
-            "imagen": "/imagenes/condimentos_pizza.jfif"
+            "imagen": "/imagenes/condimentos_pizza.jfif",
+            "cantidad":1
         },
         {
             "id": 150,
             "nombre": "Provenzal",
             "stock": true,
-            "imagen": "/imagenes/provenzal.jfif"
+            "imagen": "/imagenes/provenzal.jfif",
+            "cantidad":1
         },
         {
             "id": 151,
             "nombre": "Aji Molido",
             "stock": true,
-            "imagen": "/imagenes/aji_molido.jfif"
+            "imagen": "/imagenes/aji_molido.jfif",
+            "cantidad":1
         }
     ],
     "farmacia": [
@@ -1008,55 +1174,64 @@
             "id": 161,
             "nombre": "Toallitas Humedas",
             "stock": true,
-            "imagen": "/imagenes/toallitas_humedas.jfif"
+            "imagen": "/imagenes/toallitas_humedas.jfif",
+            "cantidad":1
         },
         {
             "id": 162,
             "nombre": "Pañales",
             "stock": true,
-            "imagen": "/imagenes/panales.jfif"
+            "imagen": "/imagenes/panales.jfif",
+            "cantidad":1
         },
         {
             "id": 173,
             "nombre": "Alical",
             "stock": true,
-            "imagen": "/imagenes/alical.jfif"
+            "imagen": "/imagenes/alical.jfif",
+            "cantidad":1
         },
         {
             "id": 174,
             "nombre": "Actron",
             "stock": true,
-            "imagen": "/imagenes/actron.jfif"
+            "imagen": "/imagenes/actron.jfif",
+            "cantidad":1
         },
         {
             "id": 175,
             "nombre": "Bicarbonato",
             "stock": true,
-            "imagen": "/imagenes/bicarbonato.jfif"
+            "imagen": "/imagenes/bicarbonato.jfif",
+            "cantidad":1
         },
         {
             "id": 176,
             "nombre": "Buscapina",
             "stock": true,
-            "imagen": "/imagenes/buscapina.jfif"
+            "imagen": "/imagenes/buscapina.jfif",
+            "cantidad":1
         },
         {
             "id": 177,
             "nombre": "Tafirol",
             "stock": true,
-            "imagen": "/imagenes/tafirol.jfif"
+            "imagen": "/imagenes/tafirol.jfif",
+            "cantidad":1
         },
         {
             "id": 178,
             "nombre": "Migral",
             "stock": true,
-            "imagen": "/imagenes/migral.jfif"
+            "imagen": "/imagenes/migral.jfif",
+            "cantidad":1
         },
         {
             "id": 179,
             "nombre": "Sertal",
             "stock": true,
-            "imagen": "/imagenes/sertal.jfif"
+            "imagen": "/imagenes/sertal.jfif",
+            "cantidad":1
         }
     ]
 }
