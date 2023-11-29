@@ -18,6 +18,7 @@ export default function ListElement({ producto }) {
     }
 
     function handleClickDecrementar() {
+        if (valorActual === 1) return
         const nwValor = valorActual - 1
         producto.cantidad = nwValor
         setValorActual(nwValor)

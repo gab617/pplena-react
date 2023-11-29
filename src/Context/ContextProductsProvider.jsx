@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // MyContextProvider.js
-import {  useState } from 'react';
+import { useState } from 'react';
 import ContextProducts from './ContextProducts';
 import productosJSON from '../assets/productos.json'
 
@@ -32,6 +32,32 @@ export const MyContextProvider = ({ children }) => {
         const listaString = productosInstancia.map(prod => `*${prod.nombre}`).join('\n');
 
         tempTextArea.value = `Lista de productos a reponer: \n${listaString}`;
+
+        // Agrega el textarea temporal al cuerpo del documento
+        document.body.appendChild(tempTextArea);
+        // Selecciona el texto en el textarea
+        tempTextArea.select();
+
+        // Intenta copiar el texto al portapapeles
+        document.execCommand('copy');
+
+        // Elimina el textarea temporal
+        document.body.removeChild(tempTextArea);
+    }
+
+    function crearStringParaEnviar2() {
+
+        // Crea un elemento textarea temporal
+        const tempTextArea = document.createElement('textarea');
+        const listaString = productosInstancia.map(prod => {
+            const crearMensaje = `*${prod.nombre}   |  ${prod.cantidad}`
+
+            
+
+            return (crearMensaje)
+        });
+
+        tempTextArea.value = `Lista de productos a reponer: \n${listaString.join('\n')}`;
 
         // Agrega el textarea temporal al cuerpo del documento
         document.body.appendChild(tempTextArea);
@@ -86,30 +112,35 @@ export const MyContextProvider = ({ children }) => {
         setProductonInstancia([])
     }
 
-    function resetearStocks(){
-        almacen.map(product =>{
-            if(!product.stock){
+    function resetearStocks() {
+        almacen.map(product => {
+            if (!product.stock) {
                 product.stock = true
+                product.cantidad = 1
             }
         })
-        verduleria.map(product =>{
-            if(!product.stock){
+        verduleria.map(product => {
+            if (!product.stock) {
                 product.stock = true
+                product.cantidad = 1
             }
         })
-        farmacia.map(product =>{
-            if(!product.stock){
+        farmacia.map(product => {
+            if (!product.stock) {
                 product.stock = true
+                product.cantidad = 1
             }
         })
-        condimentos.map(product =>{
-            if(!product.stock){
+        condimentos.map(product => {
+            if (!product.stock) {
                 product.stock = true
+                product.cantidad = 1
             }
         })
-        otros.map(product =>{
-            if(!product.stock){
+        otros.map(product => {
+            if (!product.stock) {
                 product.stock = true
+                product.cantidad = 1
             }
         })
     }
@@ -127,7 +158,8 @@ export const MyContextProvider = ({ children }) => {
             almacen, verduleria, condimentos, farmacia, otros,
             crearStringParaEnviar, actuProductosPedidos, restartLocal,
             productosInstancia, reloadProductos,
-            resetIndividualLoading
+            resetIndividualLoading,
+            crearStringParaEnviar2
         }}>
             {children}
         </ContextProducts.Provider>

@@ -2,9 +2,12 @@
 import { Link } from "react-router-dom";
 import './Carrito.css'
 import ListElement from "./ListElement/ListElement";
+import { useContext } from "react";
+import ContextProducts from "../../Context/ContextProducts";
 
 export default function Carrito({ productosInstancia }) {
     console.log(productosInstancia)
+    const { crearStringParaEnviar2 } = useContext(ContextProducts)
 
 
     return (
@@ -23,16 +26,19 @@ export default function Carrito({ productosInstancia }) {
                 {
                     productosInstancia && productosInstancia.map(producto => (
                         <>
+
                             <ListElement
                                 producto={producto}
                             />
-
-
                         </>
                     )
                     )
                 }
             </ul>
+            <div id="cont-btn-carrito">
+                <button className='interactive-button' onClick={crearStringParaEnviar2}>Crear mensaje</button>
+            </div>
+
         </div>
     )
 }

@@ -13,6 +13,33 @@
 
 }
 
+#Carrito .interactive-button{
+    text-decoration: none;
+    color: #420f0f;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: .2em -.3em .1em 0em rgba(0, 0, 0, .5);
+    padding: 1em;
+    border-radius: .5em;
+    background: #ffffff;
+    border: solid 1px #333;
+
+
+}
+
+#Carrito #cont-btn-carrito{
+    background-color: #ddccccad;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    flex-direction: column;
+    bottom: 0em;
+    left: 50%;
+    text-align: center;
+    margin: 0;
+    border-radius: .5em;
+}
 
 #Carrito a {
     text-decoration: none;
