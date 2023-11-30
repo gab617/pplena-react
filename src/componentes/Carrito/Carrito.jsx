@@ -2,13 +2,20 @@
 import { Link } from "react-router-dom";
 import './Carrito.css'
 import ListElement from "./ListElement/ListElement";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import ContextProducts from "../../Context/ContextProducts";
 
 export default function Carrito({ productosInstancia }) {
     console.log(productosInstancia)
+
+    const [prodsActuales, setProdsActuales] = useState(productosInstancia)
     const { crearStringParaEnviar2 } = useContext(ContextProducts)
 
+
+    useEffect(()=>{
+        const nwProds= productosInstancia
+        setProdsActuales(nwProds)
+    },[productosInstancia])
 
     return (
         <div id='Carrito'>
@@ -24,7 +31,7 @@ export default function Carrito({ productosInstancia }) {
 
             <ul>
                 {
-                    productosInstancia && productosInstancia.map(producto => (
+                    prodsActuales && prodsActuales.map(producto => (
                         <>
 
                             <ListElement

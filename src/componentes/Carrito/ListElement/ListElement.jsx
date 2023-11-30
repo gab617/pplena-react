@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import './ListElement.css'
+import ContextProducts from "../../../Context/ContextProducts"
 
 export default function ListElement({ producto }) {
+    const { eliminarDelCarrito } = useContext(ContextProducts)
 
     const [valorActual, setValorActual] = useState(producto.cantidad)
 
 
+    function handleclickEliminar() {
+        eliminarDelCarrito(producto)
+        console.log('eliminar: ', producto.nombre)
+    }
 
 
     function handleClickIncrementar() {
@@ -26,11 +32,19 @@ export default function ListElement({ producto }) {
     }
 
 
+    useEffect(() => {/* Cada vez que se renderiza vuelve a asignarle el valor actual en el objeto|| anteriormente sin esto quedaba el valor desfasado :C */
+        setValorActual(producto.cantidad)
+    });
+
+
     return (
         <li key={producto.id} id="ListElement">
-            <p>{producto.nombre}</p>
-            <div id="cont-img-section">
+            <div id="cont-name-btn-eliminar">
+                <p>{producto.nombre}</p>
+                <button onClick={handleclickEliminar}>Eliminar</button>
+            </div>
 
+            <div id="cont-img-section">
                 <div className="img-container">
                     <img src={producto.imagen} alt="" />
                 </div>

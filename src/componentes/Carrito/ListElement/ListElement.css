@@ -1,54 +1,65 @@
-
-
-#counter{
+#counter {
     display: flex;
     align-items: center;
     margin-left: 4em;
 }
 
-#counter #count-btn1{
+#counter #count-btn1 {
     box-shadow: 3px 4px 0px 0px #1564ad;
-	background:linear-gradient(to bottom, #79bbff 5%, #e57737 100%);
-	background-color:#79bbff;
-	border-radius:5px;
-	border:1px solid #337bc4;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:1em 1em;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
+    background: linear-gradient(to bottom, #79bbff 5%, #e57737 100%);
+    background-color: #79bbff;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 1em 1em;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
 }
 
-#counter #count-btn2{
+#cont-name-btn-eliminar button{
+    background-color: #ff6961;
+	width:auto;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: start;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#counter #count-btn2 {
     box-shadow: 3px 4px 0px 0px #15ad48;
-	background:linear-gradient(to bottom, #79bbff 5%, #54e537 100%);
-	background-color:#94ff79;
-	border-radius:5px;
-	border:1px solid #337bc4;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:1em 1em;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #5ccc52;
+    background: linear-gradient(to bottom, #79bbff 5%, #54e537 100%);
+    background-color: #94ff79;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 1em 1em;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5ccc52;
 }
 
-#counter h2{
+#counter h2 {
     margin-right: 0.6em;
     margin-left: 0.6em;
 }
 
 
-#cont-img-section{
+#cont-img-section {
     display: flex;
     justify-content: flex-end;
 }
-
-

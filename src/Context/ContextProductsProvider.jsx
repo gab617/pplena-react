@@ -52,8 +52,6 @@ export const MyContextProvider = ({ children }) => {
         const listaString = productosInstancia.map(prod => {
             const crearMensaje = `*${prod.nombre}   |  ${prod.cantidad}`
 
-            
-
             return (crearMensaje)
         });
 
@@ -85,6 +83,17 @@ export const MyContextProvider = ({ children }) => {
             console.log(newProducts, 'AGREGAR')
         }
         setProductonInstancia(newProducts)
+    }
+
+    function eliminarDelCarrito(productoItem){
+        let newProducts = []
+
+        productoItem.stock = true /* se actualiza el producto en cuestion */
+        console.log(productosInstancia)
+        newProducts = productosInstancia.filter(objeto => objeto.id !== productoItem.id);
+        setProductonInstancia(newProducts)
+        console.log(newProducts, 'BORRAR DEL CARRITO')
+
     }
 
 
@@ -159,6 +168,7 @@ export const MyContextProvider = ({ children }) => {
             crearStringParaEnviar, actuProductosPedidos, restartLocal,
             productosInstancia, reloadProductos,
             resetIndividualLoading,
+            eliminarDelCarrito,
             crearStringParaEnviar2
         }}>
             {children}
